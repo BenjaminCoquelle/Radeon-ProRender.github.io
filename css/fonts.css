@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Klavika-MediumCondensed';
+  src: url('fonts/Klavika-MediumCondensed.eot?#iefix') format('embedded-opentype'),  url('fonts/Klavika-MediumCondensed.otf')  format('opentype'),
+	     url('fonts/Klavika-MediumCondensed.woff') format('woff'), url('fonts/Klavika-MediumCondensed.ttf')  format('truetype'), url('fonts/Klavika-MediumCondensed.svg#Klavika-MediumCondensed') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

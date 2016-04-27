@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	font-family:  Arial, Helvetica, Sans-Serif;
+	color:#000;
+}
+
+h1 {
+	font-size:60px;
+	font-family:'Klavika-MediumCondensed';
+}
+
+h2 {
+	font-size:1.9em;
+	font-family:'Klavika-MediumCondensed';
+}
+
+h3 {
+
+}
+
+li{
+	margin-bottom: 1em;
+}
+
+a {
+	color:#f26621;
+}
+
+a:hover {
+	color:#333;
+	text-decoration:none;
+}
+
+
+#betab, #imagesbig{
+	display: block;
+}
+
+#betamob, #imagesmob{
+	display: none;
+}
+
+
+
+@media(max-width:768px) {
+	
+
+
+}
+
+@media(max-width:480px) {
+
+#betab, #imagesbig{
+	display: none;
+}
+
+#betamob, #imagesmob{
+	display: block;
+}
+
+h1{
+	font-size: 50px;
+}
+
+}
