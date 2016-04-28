@@ -2,18 +2,23 @@
 /* CSS Document */
 
 * {
-	font-family:  Arial, Helvetica, Sans-Serif;
+	font-family: 'Open Sans', sans-serif;
 	color:#000;
+}
+
+strong{
+	font-weight:600;
+
 }
 
 h1 {
 	font-size:60px;
-	font-family:'Klavika-MediumCondensed';
+	font-family:'Klavika-MediumCondensed', Helvetica, Verdana, sans-serif;
 }
 
 h2 {
 	font-size:1.9em;
-	font-family:'Klavika-MediumCondensed';
+	font-family:'Klavika-MediumCondensed', Helvetica, Verdana, sans-serif;
 }
 
 h3 {
