@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Set up HDRI Environment</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "2.0_2";
+</script>
+ <meta name="topic-breadcrumbs" content="Chapter 2: FireRender for 3dsmax Tutorial" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<div style="width: 100%; position: relative;" id="header">
+	<p style="text-align: right; mso-bidi-font-size: 11.0pt; line-height: 107%; 
+		 mso-bidi-font-weight: normal; font-size: 12pt; margin-top: 0pt;"><b><span 
+	 lang="EN-US" xml:lang="EN-US">AMD FireRender for Autodesk® 3ds Max®</span></b></p>
+</div>
+
+
+<h1>Set up HDRI Environment</h1>
+<p>Using the procedure <a href="Choosing_FireRender_as_Your_Renderer.htm#Render_Setup">Render 
+ Setup</a> in <a href="Choosing_FireRender_as_Your_Renderer.htm">Choosing 
+ FireRender as Your Renderer</a> set the render to AMD FireRender and do 
+ a test render.</p>
+<p style="text-align: center;"><img src="AMDFireRenderfor3dsMax_Images/light_car_render_no_lights.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:502px;" border="1" /></p>
+<p>Once you render the scene you will see we don't have any lighting. &#160;The 
+ render is very dark except for the car head lights which have an emissive 
+ material assigned so will appear to glow. &#160;We need to add an HDRI 
+ background to the environment using the same procedure as we did with 
+ <a href="Choosing_FireRender_as_Your_Renderer.htm#Setup_Lighting">Setup 
+ Lighting</a> in the <a href="Choosing_FireRender_as_Your_Renderer.htm">Choosing 
+ FireRender as Your Renderer</a>. &#160;Make sure this time however that 
+ you choose the <span style="font-weight: bold;">Studio-Chrome-v2.hdr </span>file<span 
+	 style="font-weight: bold;"> </span>from the Vehicle sample<span style="font-weight: bold;"> 
+ </span>then select <span style="font-weight: bold;">Open</span> so you 
+ can adjust the intensity of the background.</p>
+<p>Click the <span style="font-weight: bold;">16 bit/chan Linear (48 bpp)</span> 
+ and change the values of the <span style="font-weight: bold;">White Point</span> 
+ so that all of the image appears to be purple.</p>
+<p style="text-align: center;"><img src="Chapter_2_Images/hdri_lighting.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:819px;" border="1" /></p>
+<p>If we now perform another test render we can see that our car has been 
+ lit by the HDRI background.</p>
+<p style="text-align: center;"><img src="Chapter_2_Images/hdri_lit_car.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:497px;" border="1" /></p>
+<p><span style="font-weight: bold;">Save</span> your scene. &#160;Now lets 
+ look at setting up a showroom floor for the car to stand on and a physical 
+ camera to better capture the view we want.</p>
+<p>&#160;</p>
+<div style="width: 100%; position: relative;" id="footer">
+	<p style="text-align: center;"><span style="font-size: 11.0pt; line-height: 115%; 
+										 font-family: Calibri, sans-serif; 
+										 mso-ascii-theme-font: minor-latin; 
+										 mso-fareast-font-family: Calibri; 
+										 mso-fareast-theme-font: minor-latin; 
+										 mso-hansi-theme-font: minor-latin; 
+										 mso-bidi-font-family: 'Times New Roman'; 
+										 mso-bidi-theme-font: minor-bidi; 
+										 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; 
+										 mso-bidi-language: AR-SA;">©2016 
+	 Advanced Micro Devices, Inc.</span> </p>
+</div>
+</body>
+</html>

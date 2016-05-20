@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"Import Geometry","url":"Import_Geometry_or_Leverage_Existing_Scene.htm"},{"type":"item","name":"Set up HDRI Environment","url":"Set_up_HDRI_Environment.htm"},{"type":"item","name":"Set the Camera","url":"Set_the_Camera.htm"},{"type":"item","name":"Assign and Edit Materials","url":"Assign_and_Edit_Materials.htm"},{"type":"item","name":"Add Additional Lights","url":"Add_Additional_Lights.htm"},{"type":"item","name":"Render and Output Images","url":"Render_and_Output_Images.htm"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

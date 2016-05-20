@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+<title>AMD FireRender Settings</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "3.0_1";
+</script>
+ <meta name="topic-breadcrumbs" content="Chapter 3: Overview of User Interface" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<div style="width: 100%; position: relative;" id="header">
+	<p style="text-align: right; mso-bidi-font-size: 11.0pt; line-height: 107%; 
+		 mso-bidi-font-weight: normal; font-size: 12pt; margin-top: 0pt;"><b><span 
+	 lang="EN-US" xml:lang="EN-US">AMD FireRender for Autodesk® 3ds Max®</span></b></p>
+</div>
+
+
+<h1>AMD FireRender Settings</h1>
+<h2>FireRender Settings</h2>
+<p>The first line of the settings is a version reference. &#160;This allows 
+ you to identify which version of the plug-in you are running in case you 
+ run into difficulties and need to log a bug report.</p>
+<p style="text-align: center;"><img src="AMDFireRenderfor3dsMax_Images/settings_version.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:367px;" border="1" /></p>
+<h3>Progressive Rendering Limits</h3>
+<p>Progressive render limits allow you control:</p>
+<ul style="list-style: disc;">
+	<li><p>Pass limit, how many passes the render will be permitted before 
+	 stopping. For example of set to 100 the render will complete after 
+	 100 passes. &#160;</p></li>
+	<li><p>Time limit (HH-MM-SS], how long the render will go for before 
+	 completion. &#160;If set to 00-30-00 the render will run for 30 minutes 
+	 then complete.</p></li>
+</ul>
+<p style="text-align: center;"><img src="AMDFireRenderfor3dsMax_Images/settings_render_limits.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:367px;" border="1" /></p>
+<p>If none of these items are set the render will run indefinitely unless 
+ stopped with the <span style="font-weight: bold;">Cancel</span> button 
+ or paused with the <span style="font-weight: bold;">Pause</span> button. 
+ &#160;A window is displayed along side the <span style="font-weight: bold;">Production 
+ Render</span> when a <span style="font-weight: bold;">Render</span> is 
+ started. &#160;It displays the essential information about the render 
+ while allowing you to <span style="font-weight: bold;">Cancel</span> and/or 
+ <span style="font-weight: bold;">Pause</span> the render process.</p>
+<p style="text-align: center;"><img src="AMDFireRenderfor3dsMax_Images/settings_pause.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:368px;" border="1" /></p>
+<h3>Tone Mapping</h3>
+<p>As mentioned in the <a href="Working_with_Cameras.htm">Working with 
+ Cameras</a> chapter the Tone Mapping is a post render image processing 
+ effect that apples either:</p>
+<ul style="list-style: disc;">
+	<li><p>Reinhard </p></li>
+	<li><p>Linear (Photographic Exposure)</p></li>
+</ul>
+<p style="text-align: center;"><img src="AMDFireRenderfor3dsMax_Images/setting_tone_map.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:364px;" border="1" /></p>
+<h3>Depth of Field</h3>
+<p>The Depth of Field (DOF) can be enabled for all cameras via the <span 
+	 style="font-weight: bold;">Enable</span> check box. &#160;</p>
+<p style="text-align: center;"><img src="AMDFireRenderfor3dsMax_Images/setting_dof.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:369px;" border="1" /></p>
+<p>FireRender also supports the DOF settings on the <span style="font-weight: bold;">Physical 
+ Camera</span> which will enable DOF on camera by camera basis. &#160;This 
+ is explained further in <a href="Working_with_Cameras.htm">Working with 
+ Cameras</a>.</p>
+<h2>FireRender Advanced Settings</h2>
+<h3>Global Illumination</h3>
+<p>There are 2 Global Illumination method supported by FireRender:</p>
+<ul style="list-style: disc;">
+	<li><p>Path Tracing </p></li>
+	<li><p>Cached GI</p></li>
+</ul>
+<p>Clamped irradiance is set to 1 by default but can be changed if desired.</p>
+<p style="text-align: center;"><img src="AMDFireRenderfor3dsMax_Images/settings_performance.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:368px;" border="1" /></p>
+<h3>Performance Settings</h3>
+<p>Depending on the power of you CPU or GPU you may want to change the 
+ rendering mode to speed up rendering. &#160;Modes supported include:</p>
+<ul style="list-style: disc;">
+	<li><p>Global Illumination (GI)</p></li>
+	<li><p>Direct</p></li>
+	<li><p>Direct No Shadow</p></li>
+	<li><p>Wireframe</p></li>
+	<li><p>Diffuse albedo</p></li>
+	<li><p>Position</p></li>
+	<li><p>Normal</p></li>
+	<li><p>Tex coods</p></li>
+	<li><p>Ambient occlusion</p></li>
+</ul>
+<p style="text-align: center;"><img src="AMDFireRenderfor3dsMax_Images/settings_performance_2.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:365px;" border="1" /></p>
+<p>There are 2 Quality Presets to help make the performance setting easier:</p>
+<ul style="list-style: disc;">
+	<li><p>Production</p></li>
+	<li><p>Preview</p></li>
+</ul>
+<h3>Image Filter</h3>
+<p>A number of post render image filters are also supported including:</p>
+<ul style="list-style: disc;">
+	<li><p>Box</p></li>
+	<li><p>Triangle</p></li>
+	<li><p>Gaussian</p></li>
+	<li><p>Mitchel</p></li>
+	<li><p>Lanczos</p></li>
+	<li><p>Blackmanharris</p></li>
+</ul>
+<p style="text-align: center;"><img src="AMDFireRenderfor3dsMax_Images/settings_image_filter.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:369px;" border="1" /></p>
+<h3>Trace Bounce Limits</h3>
+<p>If you want to limit the number of ray-trace light bounces that are 
+ calculated for the render, you can. &#160;The default is unlimited but 
+ by selecting the <span style="font-weight: bold;">Maximum Light Bounces</span> 
+ option you can set the number of bounces.</p>
+<p style="text-align: center;"><img src="AMDFireRenderfor3dsMax_Images/settings_trace_bounce.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:366px;" border="1" /></p>
+<h3>Hardware</h3>
+<p>The FireRender install will check you system for compatibility and determine 
+ if you GPU will support OpenCL. &#160;If it does then FireRender will 
+ assign the renderer to the GPU. &#160;You can however change this if you 
+ want. &#160;You can choose to render on:</p>
+<ul style="list-style: disc;">
+	<li><p>CPU only</p></li>
+	<li><p>GPU only </p></li>
+	<li><p>or Bother CPU + GPU </p></li>
+</ul>
+<p>If you have more than 1 GPU you can select the number of GPUs to assign 
+ the render to via the <span style="font-weight: bold;">GPU#</span> &#160;as 
+ well as the <span style="font-weight: bold;">Medit Quality</span> and 
+ <span style="font-weight: bold;">VFB Refresh</span> rate.</p>
+<p>&#160;</p>
+<p style="text-align: center;"><img src="AMDFireRenderfor3dsMax_Images/setting_hardware.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:362px;" border="1" /></p>
+<h3>Diagnostics</h3>
+<p>If for some reason FireRender appears to be crashing 3ds Max you can 
+ set the Trace Dump check box to produce 2 diagnostic files that can help 
+ when tracing down problems. &#160;These are valuable when submitting a 
+ bug report as they can assist developers in finding where in the plug-in 
+ issues may be arising. &#160;</p>
+<p>The 2 files are saved under the <span style="font-weight: bold;">Program 
+ Files/Autodesk/3ds Max 2016</span> install directory are:</p>
+<ul style="list-style: disc;">
+	<li><p>logFR_data.bin</p></li>
+	<li><p>logFR.cpp</p></li>
+</ul>
+<p>You can also export the model in the scene to a directory of your choice.</p>
+<p style="text-align: center;"><img src="AMDFireRenderfor3dsMax_Images/setting_diagnostics.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:362px;" border="1" /></p>
+<p>&#160;</p>
+<div style="width: 100%; position: relative;" id="footer">
+	<p style="text-align: center;"><span style="font-size: 11.0pt; line-height: 115%; 
+										 font-family: Calibri, sans-serif; 
+										 mso-ascii-theme-font: minor-latin; 
+										 mso-fareast-font-family: Calibri; 
+										 mso-fareast-theme-font: minor-latin; 
+										 mso-hansi-theme-font: minor-latin; 
+										 mso-bidi-font-family: 'Times New Roman'; 
+										 mso-bidi-theme-font: minor-bidi; 
+										 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; 
+										 mso-bidi-language: AR-SA;">©2016 
+	 Advanced Micro Devices, Inc.</span> </p>
+</div>
+</body>
+</html>

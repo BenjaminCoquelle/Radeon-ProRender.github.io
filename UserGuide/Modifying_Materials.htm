@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Modifying Materials</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "6.0_3";
+</script>
+ <meta name="topic-breadcrumbs" content="Chapter 6: Working with Materials" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<div style="width: 100%; position: relative;" id="header">
+	<p style="text-align: right; mso-bidi-font-size: 11.0pt; line-height: 107%; 
+		 mso-bidi-font-weight: normal; font-size: 12pt; margin-top: 0pt;"><b><span 
+	 lang="EN-US" xml:lang="EN-US">AMD FireRender for Autodesk® 3ds Max®</span></b></p>
+</div>
+
+
+<h1>Modifying Materials</h1>
+<p style="font-weight: normal;"><span style="font-weight: normal;">Drag 
+ the <span style="font-weight: bold;">Liguids_Alcohol_Champagne </span>into 
+ the<span style="font-weight: bold;"> Material Editor</span> panel below 
+ the glass material we just used. &#160;This will allow us to see it better 
+ and change it.</span></p>
+<p style="text-align: center;"><img src="AMDFireRenderfor3dsMax_Images/glass_liquid_material.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:913px;" border="1" /></p>
+<p style="font-weight: normal;">You can see that the color of the liquid 
+ is set by a <span style="font-weight: bold;">Color Map</span> node which 
+ is fed through a <span style="font-weight: bold;">Map</span> node that 
+ splits it to be input into the <span style="font-weight: bold;">Color 
+ Map</span> connections of the <span style="font-weight: bold;">FireRender 
+ Reflection</span> and <span style="font-weight: bold;">FireRender Refraction</span> 
+ node. &#160;This means if we change the color of the <span style="font-weight: bold;">Color 
+ Map</span> node we should be able to change the color of the liquid.</p>
+<p style="font-weight: normal;">Double click the <span style="font-weight: bold;">Color 
+ Map</span> node/box. &#160;This will bring up the color on the right hand 
+ side of the Material Editor. &#160;Double click the <span style="font-weight: bold;">Color</span> 
+ and change the it to a deep burgundy/red. &#160;</p>
+<p style="text-align: center;"><img src="AMDFireRenderfor3dsMax_Images/glass_color_selection.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:451px;" border="1" /></p>
+<p>Select the liquid object within the scene and right click the right 
+ most node/box. &#160;Select the <span style="font-weight: bold;">Assign 
+ Material to Selection</span> from the popup menu that appears.</p>
+<p style="text-align: center;"><img src="AMDFireRenderfor3dsMax_Images/glass_material_red_wine.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:925px;" border="1" /></p>
+<p>Now render the scene to see the results by either selecting <span style="font-weight: bold;">Rendering 
+ -&gt; Render</span> from the menu, pressing the <span style="font-weight: bold;">Render 
+ Production</span> button or hitting <span style="font-weight: bold;">Shift+Q</span>.</p>
+<p style="text-align: center;"><img src="AMDFireRenderfor3dsMax_Images/3dsmax_render_production.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:190px;" border="1" /></p>
+<p style="text-align: center;"><img src="AMDFireRenderfor3dsMax_Images/glass_red_winde_render.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:724px;" border="1" /></p>
+<p>&#160;</p>
+<div style="width: 100%; position: relative;" id="footer">
+	<p style="text-align: center;"><span style="font-size: 11.0pt; line-height: 115%; 
+										 font-family: Calibri, sans-serif; 
+										 mso-ascii-theme-font: minor-latin; 
+										 mso-fareast-font-family: Calibri; 
+										 mso-fareast-theme-font: minor-latin; 
+										 mso-hansi-theme-font: minor-latin; 
+										 mso-bidi-font-family: 'Times New Roman'; 
+										 mso-bidi-theme-font: minor-bidi; 
+										 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; 
+										 mso-bidi-language: AR-SA;">©2016 
+	 Advanced Micro Devices, Inc.</span> </p>
+</div>
+</body>
+</html>

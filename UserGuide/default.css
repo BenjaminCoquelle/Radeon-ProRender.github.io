@@ -1,0 +1,102 @@
+﻿/*Created with Adobe RoboHelp 2015.*/
+body {
+	background-color: #ffffff;
+	font-family: Arial;
+}
+h1 {
+	font-weight: bold;
+	font-size: 24.0pt;
+	color: #007fbf;
+	x-next-class: ;
+	x-next-type: ol;
+	font-family: Arial;
+}
+h2 {
+	font-weight: bold;
+	font-size: 18.0pt;
+	color: #007fbf;
+	font-family: Calibri;
+	margin-top: 20pt;
+}
+h3 {
+	font-weight: bold;
+	font-size: 14.0pt;
+	color: #007fbf;
+	font-family: Arial;
+}
+h4 {
+	font-weight: bold;
+	font-size: 12.0pt;
+	color: #000000;
+	font-family: Arial;
+}
+h5 {
+	font-weight: bold;
+	font-size: 10.0pt;
+	font-family: Arial;
+}
+h6 {
+	font-weight: bold;
+	font-size: 8.0pt;
+	font-family: Arial;
+}
+p {
+	font-size: 12.0pt;
+	margin-bottom: 0pt;
+	margin-top: 8pt;
+	font-family: Arial;
+}
+a {
+	color: #0000ff;
+	display: inline;
+	font-family: Arial;
+	text-decoration: underline;
+}
+a.expandspot {
+	cursor: hand;
+	font-style: italic;
+	display: inline;
+	font-family: Arial;
+	color: #0000ff;text-decoration: none;
+}
+span.expandtext {
+	font-style: italic;
+	font-weight: normal;
+	color: #ff0000;
+	font-family: Arial;
+}
+a.dropspot {
+	cursor: hand;
+	font-style: italic;
+	display: inline;
+	font-family: Arial;
+	color: #0000ff;text-decoration: none;
+}
+a.glossterm {
+	cursor: hand;
+	font-style: italic;
+	display: inline;
+	font-family: Arial;
+	color: #0000ff;text-decoration: none;
+}
+span.glosstext {
+	font-style: italic;
+	font-weight: normal;
+	color: #0000ff;
+	font-family: Arial;
+}
+ol,
+ul {
+	margin-bottom: 0px;
+	margin-top: 4pt;
+	font-family: Arial;
+}
+a.breadcrumbs {
+	display: inline;
+	font-family: Arial;
+}
+p.breadcrumbs {
+	font-family: Arial;
+}
+a.popupspot {
+}

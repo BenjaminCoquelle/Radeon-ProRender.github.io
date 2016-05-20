@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Set the Camera</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "2.0_3";
+</script>
+ <meta name="topic-breadcrumbs" content="Chapter 2: FireRender for 3dsmax Tutorial" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<div style="width: 100%; position: relative;" id="header">
+	<p style="text-align: right; mso-bidi-font-size: 11.0pt; line-height: 107%; 
+		 mso-bidi-font-weight: normal; font-size: 12pt; margin-top: 0pt;"><b><span 
+	 lang="EN-US" xml:lang="EN-US">AMD FireRender for Autodesk® 3ds Max®</span></b></p>
+</div>
+
+
+<h1>Set the Camera</h1>
+<p>&#160;</p>
+<p>&#160;</p>
+<p>Add a floor plane by clicking the Plane object type and dragging out 
+ underneath the car.</p>
+<p style="text-align: center;"><img src="Chapter_2_Images/car_plane.jpg" alt="" style=" border:Solid 4px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:937px;" border="4" /></p>
+<p>For a ray-tracing renderer like AMD FireRender it is recommended that 
+ we use a <span style="font-weight: bold;">Physical</span> camera. &#160;</p>
+<p>Create a physical camera and place it where you want it by selecting 
+ the <span style="font-weight: bold;">Physical</span> button underneath 
+ the <span style="font-weight: bold;">Camera</span> tab. &#160;Click on 
+ the viewport to place the camera then drag to pull out the camera's field 
+ of view. &#160;Right click on the camera and select <span style="font-weight: bold;">Move 
+ </span><span>&#160;so you can left it up above the car. &#160;Rotate the 
+ field of vie to frame the car </span></p>
+<p style="text-align: center;"><img src="Chapter_2_Images/car_camera.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:948px;" border="1" /></p>
+<p>Right click on the camera and select <span style="font-weight: bold;">Move 
+ </span>&#160;so you can left it up above the car. &#160;Rotate the field 
+ of view to frame the car. &#160;If the camera is <span style="font-weight: bold;">Targeted</span> 
+ this will happen automatically.</p>
+<p style="text-align: center;"><img src="Chapter_2_Images/car_camera_move.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:981px;" border="1" /></p>
+<p>Right click the <span style="font-weight: bold;">[Perspective]</span> 
+ in the top left hand corner of the view and select <span style="font-weight: bold;">Camera 
+ -&gt; PhysCamera001 </span>to view through the camera you have just placed. 
+ </p>
+<p style="text-align: center;"><img src="Chapter_2_Images/car-camera_view.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:1019px;" border="1" /></p>
+<p>If you want you can do a test render. &#160;You will see that the renderer 
+ has set the view to PhysCamera001. &#160;Right click the <span style="font-weight: bold;">[PhysCamera001]</span> 
+ and change it back to <span style="font-weight: bold;">Perspective</span> 
+ or push <span style="font-weight: bold;">P</span>. </p>
+<p style="text-align: center;"><img src="Chapter_2_Images/car_test_render.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:1070px;" border="1" /></p>
+<p>&#160;</p>
+<div style="width: 100%; position: relative;" id="footer">
+	<p style="text-align: center;"><span style="font-size: 11.0pt; line-height: 115%; 
+										 font-family: Calibri, sans-serif; 
+										 mso-ascii-theme-font: minor-latin; 
+										 mso-fareast-font-family: Calibri; 
+										 mso-fareast-theme-font: minor-latin; 
+										 mso-hansi-theme-font: minor-latin; 
+										 mso-bidi-font-family: 'Times New Roman'; 
+										 mso-bidi-theme-font: minor-bidi; 
+										 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; 
+										 mso-bidi-language: AR-SA;">©2016 
+	 Advanced Micro Devices, Inc.</span> </p>
+</div>
+</body>
+</html>

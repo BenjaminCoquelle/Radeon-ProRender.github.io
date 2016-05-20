@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Using 3ds Max Standard Lights</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "4.0_2";
+</script>
+ <meta name="topic-breadcrumbs" content="Chapter 4: Working with Lights" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<div style="width: 100%; position: relative;" id="header">
+	<p style="text-align: right; mso-bidi-font-size: 11.0pt; line-height: 107%; 
+		 mso-bidi-font-weight: normal; font-size: 12pt; margin-top: 0pt;"><b><span 
+	 lang="EN-US" xml:lang="EN-US">AMD FireRender for Autodesk® 3ds Max®</span></b></p>
+</div>
+
+
+<h1>Using 3ds Max Standard Lights</h1>
+<p>3ds Max <span style="font-weight: bold;">Standard Lights</span> and 
+ their parameters are not necessarily meaningful in the context of providing 
+ light for a ray traced scene. &#160;It is possible to use <span style="font-weight: bold;">Standard 
+ Lights</span> with AMD FireRender, as many scenes that have already been 
+ created may have included <span style="font-weight: bold;">Standard Lights</span>, 
+ however, these will effectively be interpreted as physical lights for 
+ the purpose of producing a ray traced render.</p>
+<p>Here we'll look at the <span style="font-weight: bold;">Standard Lights</span> 
+ and see how they may vary when used in an AMD FireRender scene.</p>
+<h2>Omni Light</h2>
+<p>When adding and <span style="font-weight: bold;">Omni Light</span> to 
+ a scene you can see that it is very bright. &#160;The intensity will need 
+ to be reduced substantially for it to be useful. &#160;Add an <span style="font-weight: bold;">Omni 
+ Light</span> and reduce the <span style="font-weight: bold;">+Intensity/Color/Attenuation 
+ -&gt; Multiplier</span> to around 0.02 and the <span style="font-weight: bold;">Color</span> 
+ to blue.</p>
+<p style="text-align: center;"><img src="AMDFireRenderfor3dsMax_Images/lights_omni.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:948px;" border="1" /></p>
+<p>Because AMD FireRender treats the <span style="font-weight: bold;">Standard 
+ Omni Light</span> as a physical light, and is ray tracing the outcome, 
+ there will always be shadows. &#160;Turning the <span style="font-weight: bold;">Shadows</span> 
+ check box off will have no effect as to whether shadows are displayed 
+ or not. &#160;They will always be there.</p>
+<p>Along with <span style="font-weight: bold;">Shadows</span> the other 
+ parameters that are not supported for Standard Omni Lights include:</p>
+<ul style="list-style: disc;">
+	<li style="font-weight: normal;"><p>+Decay</p></li>
+	<li style="font-weight: normal;"><p>+Advanced Effects</p></li>
+	<li style="font-weight: normal;"><p>+Shadow Parameters</p></li>
+	<li style="font-weight: normal;"><p>+Shadow Map Params</p></li>
+	<li style="font-weight: normal;"><p>+Atmospheres &amp; effects</p></li>
+	<li style="font-weight: normal;"><p>+Indirect Illumination</p></li>
+	<li style="font-weight: normal;"><p>+Light Shader</p></li>
+</ul>
+<p>Many of these effects that have to be specified for a <span style="font-weight: bold;">Standard 
+ Omni Light </span>are already inherited by the way the physical light 
+ is rendered by AMD FiIreRender.</p>
+<h2>Spot Light</h2>
+<p>Change the <span style="font-weight: bold;">+General Parameters -&gt; 
+ Light Type</span> type to a <span style="font-weight: bold;">Spot Light</span> 
+ and change the color to something less dramatic like a beige or orange. 
+ &#160;Rotate the <span style="font-weight: bold;">Spot Light</span> so 
+ that is pointing a convenient direction. &#160;You can adjust the <span 
+	 style="font-weight: bold;">+Spotlight Parameters</span> as well like 
+ <span style="font-weight: bold;">Hotspot/Beam</span> and <span style="font-weight: bold;">Falloff/Field 
+ </span>which are supported by AMD FireRender.</p>
+<p style="text-align: center;"><img src="AMDFireRenderfor3dsMax_Images/light_spotlight.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:913px;" border="1" /></p>
+<p>&#160;Like the <span style="font-weight: bold;">Omni Light</span> shadows 
+ and other parameters do not do anything as the <span style="font-weight: bold;">Spot 
+ Light</span> is again treated as a physical light.</p>
+<h2>Directional Light</h2>
+<p>The Directional Light is treated by AMD FireRender like the sun. &#160;Which 
+ means that although the <span style="font-weight: bold;">Directional Light</span> 
+ has an area within 3ds Max it will not be rendered as an area. &#160;The 
+ only meaningful parameters for the <span style="font-weight: bold;">Directional 
+ Light</span> are:</p>
+<ul style="list-style: disc;">
+	<li><p>Direction</p></li>
+	<li><p>Intensity (Multiplier)</p></li>
+	<li><p>Color</p></li>
+</ul>
+<p>If you change the <span style="font-weight: bold;">+General Parameters 
+ -&gt; Light Type</span> type to a <span style="font-weight: bold;">Directional 
+ Light</span> you will see this effect. &#160;Increase the <span style="font-weight: bold;">+Intensity/Color/Attenuation 
+ -&gt; Multiplier</span> and you can see how it lights the whole scene 
+ as if it were being lit by the sun. &#160;Below we have changed the 3ds 
+ Max viewport mode to from [<span style="font-weight: bold;">Shaded]</span> 
+ to [<span style="font-weight: bold;">Realistic]</span> to illustrate this.</p>
+<p style="text-align: center;"><img src="AMDFireRenderfor3dsMax_Images/light_directional.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:897px;" border="1" /></p>
+<p>Like the <span style="font-weight: bold;">Omni Light</span> and <span 
+	 style="font-weight: bold;">Spot Light</span> shadows and other parameters 
+ do not do supported as the <span style="font-weight: bold;">Directional 
+ Light</span> is again treated as a physical light.</p>
+<p>&#160;</p>
+<div style="width: 100%; position: relative;" id="footer">
+	<p style="text-align: center;"><span style="font-size: 11.0pt; line-height: 115%; 
+										 font-family: Calibri, sans-serif; 
+										 mso-ascii-theme-font: minor-latin; 
+										 mso-fareast-font-family: Calibri; 
+										 mso-fareast-theme-font: minor-latin; 
+										 mso-hansi-theme-font: minor-latin; 
+										 mso-bidi-font-family: 'Times New Roman'; 
+										 mso-bidi-theme-font: minor-bidi; 
+										 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; 
+										 mso-bidi-language: AR-SA;">©2016 
+	 Advanced Micro Devices, Inc.</span> </p>
+</div>
+</body>
+</html>

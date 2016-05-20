@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Using 3dsmax Materials</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "6.0_4";
+</script>
+ <meta name="topic-breadcrumbs" content="Chapter 6: Working with Materials" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<div style="width: 100%; position: relative;" id="header">
+	<p style="text-align: right; mso-bidi-font-size: 11.0pt; line-height: 107%; 
+		 mso-bidi-font-weight: normal; font-size: 12pt; margin-top: 0pt;"><b><span 
+	 lang="EN-US" xml:lang="EN-US">AMD FireRender for Autodesk® 3ds Max®</span></b></p>
+</div>
+
+
+<h1>Using 3dsmax Materials</h1>
+<h2>Standards Materials</h2>
+<p>Like the Standard Lights many of the Standard Materials are not supported 
+ by AMD FireRender. &#160;Many of these materials simulate a physical effect 
+ on the surface of an object which is not required when using a physically 
+ based material and ray-tracing renderer.</p>
+<p>For artists creating new materials for AMD FireRender a certain change 
+ in thinking is required. &#160;As demonstrated in the next topic <a href="Creating_New_Materials_Using_the_3dsmax_Material_Editor.htm">Creating 
+ New Materials Using the 3dsmax Material Editor</a> it is important to 
+ think about the surface's attributes when it come to it's effect on lighting. 
+ &#160;Is it dirty, rough, shiny or does it have specific imperfections 
+ that affect the color. &#160;</p>
+<p>Although AMD FireRender will attempt to render the 3ds Max Standard 
+ Materials, the result may be unpredictable as the renderer will only process 
+ the materials attributes that have a counterpart in the real world. </p>
+<p>Out of the Standard Materials below only the <span style="font-weight: bold;">Standard 
+ </span>is fully<span style="font-weight: bold;"> </span>supported by<span 
+	 style="font-weight: bold;"> </span>AMD FireRender.</p>
+<p style="text-align: center;"><img src="AMDFireRenderfor3dsMax_Images/materials_standard.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:288px;" border="1" /><img alt="" src="AMDFireRenderfor3dsMax_Images/materials_standard_2.jpg" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:130px;" border="1" /></p>
+<p>The specific models supported by AMD FireRender include:</p>
+<ul style="list-style: disc;">
+	<li><p class="MsoNormal">Blinn</p></li>
+	<li><p class="MsoNormal">Metallic</p></li>
+	<li><p class="MsoNormal">MultiLayer</p></li>
+	<li><p class="MsoNormal">Oren-Nayar-Blinn</p></li>
+	<li><p class="MsoNormal">Phong</p></li>
+	<li><p class="MsoNormal">Strauss</p></li>
+	<li><p class="MsoNormal">Translucent</p></li>
+</ul>
+<p>&#160;</p>
+<div style="width: 100%; position: relative;" id="footer">
+	<p style="text-align: center;"><span style="font-size: 11.0pt; line-height: 115%; 
+										 font-family: Calibri, sans-serif; 
+										 mso-ascii-theme-font: minor-latin; 
+										 mso-fareast-font-family: Calibri; 
+										 mso-fareast-theme-font: minor-latin; 
+										 mso-hansi-theme-font: minor-latin; 
+										 mso-bidi-font-family: 'Times New Roman'; 
+										 mso-bidi-theme-font: minor-bidi; 
+										 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; 
+										 mso-bidi-language: AR-SA;">©2016 
+	 Advanced Micro Devices, Inc.</span> </p>
+</div>
+</body>
+</html>
