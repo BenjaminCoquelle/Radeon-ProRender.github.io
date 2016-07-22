@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AMD FireRender for Autodesk® 3ds Max® - AMD</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/fonts.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+<!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-77028638-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+<!-- End Google Analytics -->
+
+
+
+    <!-- BUG BASH -->
+    <!-- BUG BASH -->
+    <!-- BUG BASH -->
+    <!-- BUG BASH -->
+    <!-- BUG BASH -->
+
+    <link rel="pingback" href="xmlrpc.php">
+    <link rel="alternate" type="application/rss+xml" title="FireRender &raquo; Feed" href="feed/index.html" />
+    <link rel="alternate" type="application/rss+xml" title="FireRender &raquo; Comments Feed" href="comments/feed/index.html" />
+    <script type="text/javascript">/*<![CDATA[*/window._wpemojiSettings={"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/firebugs.info\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.3"}};!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);/*]]>*/</script>
+    <style type="text/css">
+        img.wp-smiley, img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='fd_plugin_css-css' href="wp-content/plugins/freshdesk-support/css/freshdesk_plugin7c7d.css?189db0" type='text/css' media='all' />
+    <link rel='stylesheet' id='x-stack-css' href="wp-content/themes/x/framework/css/dist/site/stacks/integrity-light7c7d.css?189db0" type='text/css' media='all' />
+    <link rel='stylesheet' id='x-google-fonts-css' href='http://fonts.googleapis.com/css?family=Open+Sans%3A300%7CLato%3A400&amp;subset=latin%2Clatin-ext&amp;ver=4.4.2' type='text/css' media='all' />
+    <script type='text/javascript' src="wp-includes/js/jquery/jquery7c7d.js?189db0"></script>
+    <script type='text/javascript' src="wp-includes/js/jquery/jquery-migrate.min7c7d.js?189db0"></script>
+    <script type='text/javascript' src="wp-content/themes/x/framework/js/dist/site/x-head.min7c7d.js?189db0"></script>
+    <script type='text/javascript' src="wp-content/plugins/cornerstone/assets/js/dist/site/cs-head.min7c7d.js?189db0"></script>
+    <link rel='https://api.w.org/' href='wp-json/index.html' />
+    <link rel="canonical" href="index.html" />
+    <link rel='shortlink' href='index.html' />
+    <link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed7e68.json?url=http%3A%2F%2Ffirebugs.info%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed2a6d?url=http%3A%2F%2Ffirebugs.info%2F&amp;format=xml" />
+
+
+    <style id="x-generated-css" type="text/css">
+        a, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .x-topbar .p-info a:hover, .x-breadcrumb-wrap a:hover, .widget ul li a:hover, .widget ol li a:hover, .widget.widget_text ul li a, .widget.widget_text ol li a, .widget_nav_menu .current-menu-item > a, .x-widgetbar .widget ul li a:hover, .x-accordion-heading .x-accordion-toggle:hover, .x-comment-author a:hover, .x-comment-time:hover, .x-recent-posts a:hover .h-recent-posts {
+            color: rgb(237,28,36);
+        }
+
+        a:hover, .widget.widget_text ul li a:hover, .widget.widget_text ol li a:hover, .x-twitter-widget ul li a:hover {
+                color: rgb(177,17,22);
+            }
+
+            .rev_slider_wrapper, a.x-img-thumbnail:hover, .x-slider-container.below, .page-template-template-blank-3-php .x-slider-container.above, .page-template-template-blank-6-php .x-slider-container.above {
+                border-color: rgb(237,28,36);
+            }
+
+        .entry-thumb:before, .x-pagination span.current, .flex-direction-nav a, .flex-control-nav a:hover, .flex-control-nav a.flex-active, .mejs-time-current, .x-dropcap, .x-skill-bar .bar, .x-pricing-column.featured h2, .h-comments-title small, .x-entry-share .x-share:hover, .x-highlight, .x-recent-posts .x-recent-posts-img:after {
+            background-color: rgb(237,28,36);
+        }
+
+        .x-nav-tabs > .active > a, .x-nav-tabs > .active > a:hover {
+            box-shadow: inset 0 3px 0 0 rgb(237,28,36);
+        }
+
+        .x-main {
+            width: 69.536945%;
+        }
+
+        .x-sidebar {
+            width: 25.536945%;
+        }
+
+        .x-topbar .p-info, .x-topbar .p-info a, .x-navbar .desktop .x-nav > li > a, .x-navbar .desktop .sub-menu a, .x-navbar .mobile .x-nav li > a, .x-breadcrumb-wrap a, .x-breadcrumbs .delimiter {
+            color: #272727;
+        }
+
+            .x-navbar .desktop .x-nav > li > a:hover, .x-navbar .desktop .x-nav > .x-active > a, .x-navbar .desktop .x-nav > .current-menu-item > a, .x-navbar .desktop .sub-menu a:hover, .x-navbar .desktop .sub-menu .x-active > a, .x-navbar .desktop .sub-menu .current-menu-item > a, .x-navbar .desktop .x-nav .x-megamenu > .sub-menu > li > a, .x-navbar .mobile .x-nav li > a:hover, .x-navbar .mobile .x-nav .x-active > a, .x-navbar .mobile .x-nav .current-menu-item > a {
+                color: #b7b7b7;
+            }
+
+            .x-navbar .desktop .x-nav > li > a:hover, .x-navbar .desktop .x-nav > .x-active > a, .x-navbar .desktop .x-nav > .current-menu-item > a {
+                box-shadow: inset 0 4px 0 0 rgb(237,28,36);
+            }
+
+        .x-navbar .desktop .x-nav > li > a {
+            height: 90px;
+            padding-top: 37px;
+        }
+
+        .x-navbar-fixed-top-active .x-navbar-wrap {
+            margin-bottom: 1px;
+        }
+
+        .x-navbar .desktop .x-nav > li ul {
+            top: 75px;
+        }
+
+        .x-comment-author, .x-comment-time, .comment-form-author label, .comment-form-email label, .comment-form-url label, .comment-form-rating label, .comment-form-comment label, .widget_calendar #wp-calendar caption, .widget.widget_rss li .rsswidget {
+            font-family: Open Sans;
+            font-weight: 300;
+        }
+
+        .p-landmark-sub, .p-meta, input, button, select, textarea {
+            font-family: Calibri;
+        }
+
+        .widget ul li a, .widget ol li a, .x-comment-time {
+            color: #848484;
+        }
+
+        .widget_text ol li a, .widget_text ul li a {
+            color: rgb(237,28,36);
+        }
+
+            .widget_text ol li a:hover, .widget_text ul li a:hover {
+                color: rgb(177,17,22);
+            }
+
+        .comment-form-author label, .comment-form-email label, .comment-form-url label, .comment-form-rating label, .comment-form-comment label, .widget_calendar #wp-calendar th, .p-landmark-sub strong, .widget_tag_cloud .tagcloud a:hover, .widget_tag_cloud .tagcloud a:active, .entry-footer a:hover, .entry-footer a:active, .x-breadcrumbs .current, .x-comment-author, .x-comment-author a {
+            color: #272727;
+        }
+
+        .widget_calendar #wp-calendar th {
+            border-color: #272727;
+        }
+
+        .h-feature-headline span i {
+            background-color: #272727;
+        }
+
+        @media (max-width:979px) {
+            .x-navbar-fixed-top-active .x-navbar-wrap {
+                margin-bottom: 0;
+            }
+        }
+
+        a:focus, select:focus, input[type="file"]:focus, input[type="radio"]:focus, input[type="submit"]:focus, input[type="checkbox"]:focus {
+            outline: thin dotted #333;
+            outline: 5px auto rgb(237,28,36);
+            outline-offset: -1px;
+        }
+
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+            font-family: "Open Sans",sans-serif;
+            font-style: normal;
+            font-weight: 300;
+        }
+
+        h1, .h1 {
+            letter-spacing: -0.017em;
+        }
+
+        h2, .h2 {
+            letter-spacing: -0.023em;
+        }
+
+        h3, .h3 {
+            letter-spacing: -0.029em;
+        }
+
+        h4, .h4 {
+            letter-spacing: -0.039em;
+        }
+
+        h5, .h5 {
+            letter-spacing: -0.044em;
+        }
+
+        h6, .h6 {
+            letter-spacing: -0.067em;
+        }
+
+        .w-h {
+            font-weight: 300 !important;
+        }
+
+        .x-container.width {
+            width: 90%;
+        }
+
+        .x-container.max {
+            max-width: 1200px;
+        }
+
+        .x-main.full {
+            float: none;
+            display: block;
+            width: auto;
+        }
+
+        @media (max-width:979px) {
+            .x-main.full, .x-main.left, .x-main.right, .x-sidebar.left, .x-sidebar.right {
+                float: none;
+                display: block;
+                width: auto !important;
+            }
+        }
+
+        .entry-header, .entry-content {
+            font-size: 18px;
+        }
+
+        body, input, button, select, textarea {
+            font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a, blockquote {
+            color: #272727;
+        }
+
+        .cfc-h-tx {
+            color: #272727 !important;
+        }
+
+        .cfc-h-bd {
+            border-color: #272727 !important;
+        }
+
+        .cfc-h-bg {
+            background-color: #272727 !important;
+        }
+
+        .cfc-b-tx {
+            color: #848484 !important;
+        }
+
+        .cfc-b-bd {
+            border-color: #848484 !important;
+        }
+
+        .cfc-b-bg {
+            background-color: #848484 !important;
+        }
+
+        body.x-navbar-fixed-top-active .x-navbar-wrap {
+            height: 90px;
+        }
+
+        .x-navbar-inner {
+            min-height: 90px;
+        }
+
+        .x-brand {
+            margin-top: 16px;
+            font-family: "Open Sans",sans-serif;
+            font-size: 38px;
+            font-style: normal;
+            font-weight: 300;
+            letter-spacing: -0.079em;
+            text-transform: uppercase;
+            color: #272727;
+        }
+
+            .x-brand:hover, .x-brand:focus {
+                color: #272727;
+            }
+
+        .x-navbar .x-nav-wrap .x-nav > li > a {
+            font-family: "Lato",sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 0.182em;
+            text-transform: uppercase;
+        }
+
+        .x-navbar .desktop .x-nav > li > a {
+            font-size: 11px;
+        }
+
+            .x-navbar .desktop .x-nav > li > a:not(.x-btn-navbar-woocommerce) {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            .x-navbar .desktop .x-nav > li > a > span {
+                margin-right: -0.182em;
+            }
+
+        .x-btn-navbar {
+            margin-top: 19px;
+        }
+
+            .x-btn-navbar, .x-btn-navbar.collapsed {
+                font-size: 24px;
+            }
+
+        @media (max-width:979px) {
+            body.x-navbar-fixed-top-active .x-navbar-wrap {
+                height: auto;
+            }
+
+            .x-widgetbar {
+                left: 0;
+                right: 0;
+            }
+        }
+
+        .x-btn, .button, [type="submit"] {
+            color: #fff;
+            border-color: rgb(177,17,23);
+            background-color: rgb(237,28,36);
+            margin-bottom: 0.25em;
+            text-shadow: 0 0.075em 0.075em rgba(0,0,0,0.5);
+            box-shadow: 0 0.25em 0 0 rgb(177,17,23),0 4px 9px rgba(0,0,0,0.75);
+            border-radius: 0.25em;
+        }
+
+            .x-btn:hover, .button:hover, [type="submit"]:hover {
+                color: #fff;
+                border-color: #600900;
+                background-color: hsl(8,100%,34%);
+                margin-bottom: 0.25em;
+                text-shadow: 0 0.075em 0.075em rgba(0,0,0,0.5);
+                box-shadow: 0 0.25em 0 0 #a71000,0 4px 9px rgba(0,0,0,0.75);
+            }
+
+            .x-btn.x-btn-real, .x-btn.x-btn-real:hover {
+                margin-bottom: 0.25em;
+                text-shadow: 0 0.075em 0.075em rgba(0,0,0,0.65);
+            }
+
+            .x-btn.x-btn-real {
+                box-shadow: 0 0.25em 0 0 rgb(177,17,23),0 4px 9px rgba(0,0,0,0.75);
+            }
+
+                .x-btn.x-btn-real:hover {
+                    box-shadow: 0 0.25em 0 0 #a71000,0 4px 9px rgba(0,0,0,0.75);
+                }
+
+            .x-btn.x-btn-flat, .x-btn.x-btn-flat:hover {
+                margin-bottom: 0;
+                text-shadow: 0 0.075em 0.075em rgba(0,0,0,0.65);
+                box-shadow: none;
+            }
+
+            .x-btn.x-btn-transparent, .x-btn.x-btn-transparent:hover {
+                margin-bottom: 0;
+                border-width: 3px;
+                text-shadow: none;
+                text-transform: uppercase;
+                background-color: transparent;
+                box-shadow: none;
+            }
+
+        .h-widget:before, .x-flickr-widget .h-widget:before, .x-dribbble-widget .h-widget:before {
+            position: relative;
+            font-weight: normal;
+            font-style: normal;
+            line-height: 1;
+            text-decoration: inherit;
+            -webkit-font-smoothing: antialiased;
+            speak: none;
+        }
+
+        .h-widget:before {
+            padding-right: 0.4em;
+            font-family: "fontawesome";
+        }
+
+        .x-flickr-widget .h-widget:before, .x-dribbble-widget .h-widget:before {
+            top: 0.025em;
+            padding-right: 0.35em;
+            font-family: "foundationsocial";
+            font-size: 0.785em;
+        }
+
+        .widget_archive .h-widget:before {
+            content: "\f040";
+            top: -0.045em;
+            font-size: 0.925em;
+        }
+
+        .widget_calendar .h-widget:before {
+            content: "\f073";
+            top: -0.0825em;
+            font-size: 0.85em;
+        }
+
+        .widget_categories .h-widget:before, .widget_product_categories .h-widget:before {
+            content: "\f02e";
+            font-size: 0.95em;
+        }
+
+        .widget_nav_menu .h-widget:before, .widget_layered_nav .h-widget:before {
+            content: "\f0c9";
+        }
+
+        .widget_meta .h-widget:before {
+            content: "\f0fe";
+            top: -0.065em;
+            font-size: 0.895em;
+        }
+
+        .widget_pages .h-widget:before {
+            content: "\f0f6";
+            top: -0.065em;
+            font-size: 0.85em;
+        }
+
+        .widget_recent_reviews .h-widget:before, .widget_recent_comments .h-widget:before {
+            content: "\f086";
+            top: -0.065em;
+            font-size: 0.895em;
+        }
+
+        .widget_recent_entries .h-widget:before {
+            content: "\f02d";
+            top: -0.045em;
+            font-size: 0.875em;
+        }
+
+        .widget_rss .h-widget:before {
+            content: "\f09e";
+            padding-right: 0.2em;
+        }
+
+        .widget_search .h-widget:before, .widget_product_search .h-widget:before {
+            content: "\f0a4";
+            top: -0.075em;
+            font-size: 0.85em;
+        }
+
+        .widget_tag_cloud .h-widget:before, .widget_product_tag_cloud .h-widget:before {
+            content: "\f02c";
+            font-size: 0.925em;
+        }
+
+        .widget_text .h-widget:before {
+            content: "\f054";
+            padding-right: 0.4em;
+            font-size: 0.925em;
+        }
+
+        .x-dribbble-widget .h-widget:before {
+            content: "\f009";
+        }
+
+        .x-flickr-widget .h-widget:before {
+            content: "\f010";
+            padding-right: 0.35em;
+        }
+
+        .widget_best_sellers .h-widget:before {
+            content: "\f091";
+            top: -0.0975em;
+            font-size: 0.815em;
+        }
+
+        .widget_shopping_cart .h-widget:before {
+            content: "\f07a";
+            top: -0.05em;
+            font-size: 0.945em;
+        }
+
+        .widget_products .h-widget:before {
+            content: "\f0f2";
+            top: -0.05em;
+            font-size: 0.945em;
+        }
+
+        .widget_featured_products .h-widget:before {
+            content: "\f0a3";
+        }
+
+        .widget_layered_nav_filters .h-widget:before {
+            content: "\f046";
+            top: 1px;
+        }
+
+        .widget_onsale .h-widget:before {
+            content: "\f02b";
+            font-size: 0.925em;
+        }
+
+        .widget_price_filter .h-widget:before {
+            content: "\f0d6";
+            font-size: 1.025em;
+        }
+
+        .widget_random_products .h-widget:before {
+            content: "\f074";
+            font-size: 0.925em;
+        }
+
+        .widget_recently_viewed_products .h-widget:before {
+            content: "\f06e";
+        }
+
+        .widget_recent_products .h-widget:before {
+            content: "\f08d";
+            top: -0.035em;
+            font-size: 0.9em;
+        }
+
+        .widget_top_rated_products .h-widget:before {
+            content: "\f075";
+            top: -0.145em;
+            font-size: 0.885em;
+        }
+
+        .x-content-dock {
+            position: fixed;
+            bottom: 0;
+            border: 1px solid #e5e5e5;
+            border-bottom: 0;
+            padding: 30px;
+            background-color: #fff;
+            z-index: 1050;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            -webkit-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+
+            .x-content-dock h1,
+            .x-content-dock h2,
+            .x-content-dock h3,
+            .x-content-dock h4,
+            .x-content-dock h5,
+            .x-content-dock h6 {
+                color: #272727 !important;
+            }
+
+            .x-content-dock a:not(.x-btn):not(.x-recent-posts a) {
+                color: #c40000 !important;
+            }
+
+                .x-content-dock a:not(.x-btn):not(.x-recent-posts a):hover {
+                    color: #e30613 !important;
+                }
+
+            .x-content-dock .widget {
+                text-shadow: none;
+                color: #b5b5b5 !important;
+            }
+
+                .x-content-dock .widget:before {
+                    display: none;
+                }
+
+            .x-content-dock .h-widget {
+                margin: 0 0 0.5em;
+                font-size: 1.65em;
+                line-height: 1.2;
+            }
+
+        .x-close-content-dock {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 12px;
+            line-height: 1;
+            text-decoration: none;
+        }
+
+            .x-close-content-dock span {
+                color: #d9d9d9 !important;
+                -webkit-transition: color 0.3s ease;
+                transition: color 0.3s ease;
+            }
+
+            .x-close-content-dock:hover span {
+                color: #e30613 !important;
+            }
+
+        @media (max-width: 767px) {
+            .x-content-dock {
+                display: none;
+            }
+        }
+
+        .page-template-template-blank-1 .entry-wrap {
+            border: none;
+            box-shadow: none;
+        }
+
+        .entry-wrap {
+            border: none;
+            box-shadow: none;
+        }
+
+        .x-container.offset {
+            margin: 0 auto;
+        }
+
+        .entry-wrap {
+            padding-top: 0;
+        }
+
+        .h3 {
+            margin-top: 10px;
+        }
+
+        .h2 {
+            margin-top: 10px;
+        }
+
+        .h1 {
+            margin-top: 10px;
+        }
+
+    </style>
+
+    <!-- BUG BASH -->
+    <!-- BUG BASH -->
+    <!-- BUG BASH -->
+    <!-- BUG BASH -->
+    <!-- BUG BASH -->
+
+
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12" style="text-align:center">
+        <h1>AMD FireRender for Autodesk<span style="font-size:28px;vertical-align:top">®</span> 3ds Max<span style="font-size:28px;vertical-align:top">®</span></h1>
+    </div>
+  </div>
+ <div style="height:35px"></div> 
+</div>
+
+    <div class="container">
+        <div class="img-responsive"><img src="images/header.jpg" alt="" width="100%" height="auto" class="img-responsive" /></div>
+        <div style="height:35px"></div>
+        <div class="row ">
+            <div class="text col-sm-8"><p style="font-size:19px; margin-bottom:20px"><strong>For designers, artists, and creatives, who want to make stunning renderings at no cost, AMD FireRender for Autodesk<span style="font-size:13px;vertical-align:top">®</span> 3ds Max<span style="font-size:13px;vertical-align:top">®</span> is a physically accurate raytracing plugin that provides a simple to use, deeply integrated Autodesk<span style="font-size:13px;vertical-align:top">®</span> 3ds Max<span style="font-size:13px;vertical-align:top">®</span> experience, with an extensive beautiful material library.</strong></p></div>
+            <div class="col-sm-4" style="text-align:center"> <img src="images/logos.jpg" alt="" width="100%" height="auto" style="max-width:260px; margin:auto; " /></div>
+        </div>
+        <div style="height:20px"></div>
+        <div class="row">
+            <div class="col-md-12" style="text-align:center">
+                <img src="images/betabanner.jpg" alt="" width="100%" height="auto" class="img-responsive" id="betab" style="max-width:989px; margin: auto;" />
+                <img src="images/betamob.jpg" alt="" width="100%" height="auto" class="img-responsive" id="betamob" style="max-width:989px; margin: auto; " />
+            </div>
+        </div>
+        <div style="height:35px"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>10 Key Features You’ll Love</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <ol>
+                    <li>It's <strong>Fast</strong>. Out of the box, the global illumination engine delivers physically accurate, photorealistic renderings, without any prior knowledge of complicated rendering or material setups.</li>
+                    <li>Built on OpenCL™, it's <strong>Hardware Agnostic</strong>, so it runs on virtually any hardware, including any combination of GPUs and CPUs.</li>
+                    <li>It's <strong>Easy</strong> to use. A push-button global illumination solution, it seamlessly combines physically accurate materials with existing 3ds Max® maps; existing 3ds Max® photometric lights can be used as well. Also, to help newcomers, most existing scenes are rendered without need for major rework.</li>
+                    <li><strong>Integrated Materials</strong> are simple to use and editable in the 3ds Max® Material Slate Editor as nodes.</li>
+                </ol>
+            </div>
+            <div class="col-md-6">
+                <ol start="5">
+                    <li>It comes with a helpful and beautiful <a href="MaterialLibrary/index.html" rel=""><strong>Material Library</strong></a>, ready to use. Artists can use, easily adjust, and quickly learn to make their own. </li>
+                    <li><strong>Active Shade Viewport Integration</strong> means you can work with FireRender in real time, so you can see your changes as you make them.</li>
+                    <li><strong>Physically Correct</strong> materials and lighting allow you to make true design decisions with global illumination—including caustics.</li>
+                    <li><strong>Emissive And Photometric Lighting</strong>, as well as lights from HDRI environments, let you blend a scene in with its surroundings.</li>
+                    <li>Plug your laptop in and render even faster with <a href="http://www.amd.com/en-us/innovations/software-technologies/technologies-gaming/xconnect" target="_blank">AMD XConnect™</a> Technology.</li>
+                    <li>It’s <strong>Free</strong></li>
+                </ol>
+            </div>
+        </div>
+
+
+
+        <div style="height:35px"></div>
+        <div class="row">
+
+            <div class="col-md-12" style="text-align:center">
+                <img src="images/image0.jpg" alt="" width="100%" height="auto" class="img-responsive" style="max-width:1137px; margin: auto;" />
+            </div>
+            <div class="col-md-12" style="text-align:center; height:5px">
+            </div>
+            <div class="col-md-12" style="text-align:center">
+                <img src="images/images.jpg" id="imagesbig" alt="" width="100%" height="auto" class="img-responsive" style="max-width:1137px; margin: auto;" />
+                <img src="images/imagemob.jpg" id="imagesmob" alt="" width="100%" height="auto" class="img-responsive" style="max-width:1137px; margin: auto;" />
+            </div>
+            <div class="col-md-12" style="text-align:center; height:5px">
+            </div>
+                <div class="col-md-12" style="text-align:center">
+                <img src="images/image8.jpg" alt="" width="100%" height="auto" class="img-responsive" style="max-width:1137px; margin: auto;" />
+            </div>
+            <div class="col-md-12" style="text-align:center; height:5px">
+            </div>
+            <div class="col-md-12" style="text-align:center">
+                <div class="col-md-6">
+                    <img src="images/image2.jpg" alt="" width="100%" height="auto" class="img-responsive" style="max-width:1137px; margin: auto;" />
+                </div>
+                <div class="col-md-6">
+                    <img src="images/image3.jpg" alt="" width="100%" height="auto" class="img-responsive" style="max-width:1137px; margin: auto;" />
+                </div>
+            </div>
+            <div class="col-md-12" style="text-align:center; height:5px">
+            </div>
+            <div class="col-md-12" style="text-align:center">
+                <img src="images/image4.jpg" alt="" width="100%" height="auto" class="img-responsive" style="max-width:1137px; margin: auto;" />
+            </div>
+            <div class="col-md-12" style="text-align:center; height:5px">
+            </div>
+            <div class="col-md-12" style="text-align:center">
+                <div class="col-md-6">
+                    <img src="images/image6.jpg" alt="" width="100%" height="auto" class="img-responsive" style="max-width:1137px; margin: auto;" />
+                </div>
+                <div class="col-md-6">
+                    <img src="images/image7.jpg" alt="" width="100%" height="auto" class="img-responsive" style="max-width:1137px; margin: auto;" />
+                </div>
+            </div>
+        </div>
+
+        <div style="height:35px"></div>
+        <div class="row">
+            <div class="col-md-12" style="text-align:center">
+                <p style="max-width:530px; margin: 20px auto; font-size:15px;"><strong>The AMD FireRender engine is a full-fledged unbiased path tracing renderer that also includes a native physically-based material system.</strong></p>
+                <img src="images/screen.jpg" alt="" width="100%" height="auto" class="img-responsive" style="max-width:831px; margin: auto;" />
+            </div>
+        </div>
+        <div style="height:15px"></div>
+        <hr class="dotted" style="margin-top:20px; margin-bottom:20px;">
+        <div class="row">
+            <div class="col-md-12">
+                <span style="text-align:left"><h2>Video Tutorials</h2></span>
+                <div>
+                    <div class="col-md-6" align="left">
+                        <div>
+                            <div style="font-size:20px;">
+                                Tutorial 1:
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/wsmKdHqLSbY" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div style="font-size:15px;">
+                                Quick start video; walk through of how to get setup, how to use the material library, quickly set up lights, and get a rendering. Using the car asset that is available for download.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" align="left">
+                        <div>
+                            <div style="font-size:20px;">
+                                Tutorial 2:
+                            </div>
+                            <div class="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/YCyTnYgPEo8" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div style="font-size:15px;">
+                                Import geometry, setup environment, add additional lights, setup camera, render and save images.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12" style="text-align:center; height:15px">
+            </div>
+            <div class="col-md-12" align="center">
+                <div class="col-md-6" align="left">
+                    <div>
+                        <div style="font-size:20px;">
+                            Tutorial 3:
+                        </div>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/14k5bI_uxxI" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div style="font-size:15px;">
+                            Creating physically accurate materials with AMD FireRender in Autodesk 3ds Max - glass and physical properties
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" align="left">
+                    <div>
+                        <div style="font-size:20px;">
+                            Tutorial 4:
+                        </div>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/g-pT-cMkbo0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div style="font-size:15px;">
+                            Creating realistic materials with AMD FireRender in Autodesk 3ds Max - part 2 metals
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12" style="text-align:center; height:15px">
+            </div>
+            <div class="col-md-6">
+                <h2>Download</h2>
+                <p><i class="icon-github"></i> Download the <a href="https://github.com/AMDFirePro/FireRender3DSMaxPlugin/releases" target="_blank">FireRender Max Plugin here</a>.</p>
+                <h2>Material Library</h2>
+                <img src="images/FR_Orb_Array.jpg" alt="" width="100%" height="auto" class="img-responsive" style="max-width:1137px; margin: auto;" />
+                <p><a href="MaterialLibrary/index.html" rel="">View the Materials Library here</a>.</p>
+                <h2>Example Scenes</h2>
+                <p><a href="https://github.com/AMDFirePro/FireRender3DSMaxPlugin/releases" target="_blank"><i class="icon-github"></i> Download example scenes</a></p>
+            </div>
+            <div class="col-md-6">
+                <h2>User Guide</h2>
+                <p><a href="UserGuide/index.htm">View the Online User Guide here.</a></p>
+                <h2>Feedback and Support</h2>
+                <p>Please post to the <a href="http://forums.autodesk.com/t5/shading-lighting-and-rendering/bd-p/area-b30" target="_blank">Autodesk forum</a>.</p>
+                <h2>Hardware &amp; Support Information</h2>
+                <ul>
+                    <li>Autodesk® 3ds Max® 2016 with Service Pack 3+</li>
+                    <li>A PC with Windows<sup>®</sup> 7, Windows® 8, Windows<sup>®</sup> 8.1 or Windows<sup>®</sup> 10 installed.</li>
+                    <li>Hardware Support: Runs on both GPUs and CPUs. OpenCL™ 1.2 required for GPUs.</li>
+                    <li>For a system report and to find out if your hardware supports OpenCL™ 1.2, run <a href="http://www.geeks3d.com/20151231/gpu-caps-viewer-1-26-0-gpu-information-utility-opengl-opencl-cuda/" target="_blank">GPU-CAP-Viewer</a>.</li>
+                    <li>Recommended Hardware: AMD FirePro™ W or S series or Radeon™ graphics card of the “Southern Islands” generation or beyond. Examples: FirePro™ W9100, W8100, W7100 GPUs; Radeon™ 7950 GPU, Radeon™ 7970 GPU, Radeon™ R280 GPU, Radeon™ R290X GPU, etc.</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="style1">
+
+        <!-- BUG BASH -->
+        <!-- BUG BASH -->
+        <!-- BUG BASH -->
+        <!-- BUG BASH -->
+        <!-- BUG BASH -->
+
+    <span style="font-size: 18px;font-style: normal;font-weight: 400;color: #848484;">
+        
+        <div id="top" class="site">
+            <header class="masthead masthead-inline" role="banner">
+                <div id="x-section-2" class="x-section" style="margin: 0px;padding: 25px 0px 0px; background-color: transparent;">
+                    <div class="x-container max width" style="margin: 0px auto;padding: 0px;">
+                        <div class="x-column x-sm x-1-1" style="padding: 0px;">
+                            <h2 class="h-custom-headline cs-ta-left h2" style="color:hsl(0, 97%, 51%);"><span>Grab FireRender. Find Bugs. Win prizes!</span></h2><div class="x-text cs-ta-left">
+                                <p>
+                                    We&#8217;d love it if you took FireRender for a spin between <span style="color: #ff0000;"><strong>June 07<sup> th</sup></strong></span> and <span style="color: #ff0000;"><strong>July 07<sup>th</sup></strong></span>, and used it for your pipeline or just-for-fun-renders. We want to make FireRender the best it can be, but we <em>know </em>we can’t do this without the value and experience your eyes and renders bring to the table.
+                                </p><p>
+                                    <img class="alignnone size-full wp-image-357" src="images/raffle2.jpg" alt="raffle2" width="1200" height="219" srcset="http://firebugs.info/wp-content/uploads/2016/06/raffle2.jpg 1200w, http://firebugs.info/wp-content/uploads/2016/06/raffle2-300x55.jpg 300w, http://firebugs.info/wp-content/uploads/2016/06/raffle2-768x140.jpg 768w, http://firebugs.info/wp-content/uploads/2016/06/raffle2-1024x187.jpg 1024w, http://firebugs.info/wp-content/uploads/2016/06/raffle2-100x18.jpg 100w" sizes="(max-width: 1200px) 100vw, 1200px" /><span style="line-height: 1.5;">So we&#8217;re asking: Please help us find as many new, unique bugs as possible, and spread the word – the more report</span>s we get, the better. And teamed up with <a href="http://www.3dtotal.com/">3D Total</a>, we reward that  effort; Enter a new, unique bug into our system, and you’re automatically eligible for our raffle. Enter several new, unique bugs, and each of those entries increase your chances of winning a brand new, high end AMD graphics card at the end of our bugbash! Once the last bug report has been submitted and we&#8217;ve sorted all the bug- entries, we&#8217;ll be raffling out <strong>
+                                        <span style="color: #ff0000;">five</span>
+                                    </strong> <a href="http://www.amd.com/en-us/products/graphics/workstation/firepro-3d/8100">AMD FirePro W8100</a>graphics cards to our lucky, randomly picked winners. And with new issues of <a href="https://www.3dcreativemag.com/">3D Creative</a>, <a href="http://www.2dartistmag.com/">2D Artist</a>, and all those new 3D Total <a href="http://www.3dtotal.com/tutorials/">tutorials</a>and <a href="https://shop.3dtotal.com/training.html">ebooks</a> out this summer, who <em>wouldn&#8217;t </em>want a little more  rendering muscle under the hood?
+                                </p><h4 style="text-align: left;"></h4>
+                            </div><h4 id="raffle" class="h-feature-headline h4" style="color: rgb(237, 28, 36);">
+                                <span>
+                                    <i class="x-icon-trophy" data-x-icon="&#xf091;" style="background-color: rgb(237, 28, 36);"></i>Want to enter the 3D Total raffle? Here&#8217;s how:
+                                </span>
+                            </h4>
+                        </div>
+                    </div><div class="x-container max width" style="margin: 0px auto;padding: 0px;">
+                        <div class="x-column x-sm x-1-1" style="padding: 0px;">
+                            <div class="x-text">
+                                <ol>
+                                    <li>
+                                        <a href="https://github.com/AMDFirePro/FireRender3DSMaxPlugin/releases">Download the latest release</a>from the link in the popup on the left or at the bottom of the page. FireRender is free and will remain free when it officially ships
+                                    </li>
+                                    <li>If you want to test it with an existing scene, play it safe, and back it up</li>
+                                    <li>Test the build with any of your previous scenes, current work, or just with for-fun experiments</li>
+                                    <li>
+                                        If you find a bug, report it in the<strong>
+                                            <span style="color: #ff0000;">&#8220;Report a bug&#8221;</span>
+                                        </strong> tab top left. Or follow <a href="https://firerender.freshdesk.com/support/login">this link</a>
+                                    </li>
+                                    <li>You will know it’s a unique bug if it’s not been marked Duplicate, or similar.</li>
+                                    <li>Closing date for the free prize draw is 07<sup>th</sup> July 2016.</li>
+                                    <li>Please check our terms and conditions before you enter:</li>
+                                </ol>
+                            </div><a class="x-btn x-btn-square x-btn-global x-btn-block" href="https://github.com/AMDFirePro/FireRender3DSMaxPlugin/releases" target="_blank" data-options="thumbnail: ''">
+                                <i class="x-icon mvn mln mrs x-icon-download" data-x-icon="&#xf019;" aria-hidden="true"></i>Get FireRender Now!
+                            </a>
+                        </div>
+                    </div>
+                </div><div id="x-section-3" class="x-section" style="margin: 0px;padding: 5px 0px 45px; background-color: transparent;">
+                    <div class="x-container max width" style="margin: 0px auto;padding: 0px;">
+                        <div class="x-column x-sm x-1-1" style="padding: 0px;">
+                            <hr class="x-gap" style="margin: 25px 0 0 0;"><ul class="x-nav x-nav-tabs three-up top" data-x-element="tab_nav" data-x-params="{&quot;orientation&quot;:&quot;horizontal&quot;}">
+                                <li class="x-nav-tabs-item active">
+                                    <a data-cs-tab-toggle="1">How to BugBash!</a>
+                                </li>
+                                <li class="x-nav-tabs-item">
+                                    <a data-cs-tab-toggle="2">Join the Conversation!</a>
+                                </li>
+                                <li class="x-nav-tabs-item">
+                                    <a data-cs-tab-toggle="3">Terms and Conditions</a>
+                                </li>
+                            </ul><div class="x-tab-content">
+                                <div data-cs-tab-index="1" class="x-tab-pane fade in active">
+                                    No betas releases are perfect , and much as we wish it weren&#8217;t so, this applies to FireRender as well. Help us get the issues you report fixed, faster, by checking these short submission guidelines for reporting an issue <a href="https://firerender.freshdesk.com/support/tickets">into the issue-tracker.</a></p><p>
+                                        <strong>Here&#8217;s the short version:</strong><br /> First of all, a bug means the software misbehaves, or not as expected. So if you want added functionality, that would be a feature request, and not a bug report &#8211; but we&#8217;ll accept those, too! However, buggy behaviour is typically stuff like crashing, not responding, or the application not doing what you told it to, like an applied material not rendering, a scene not updating,  or something you&#8217;ve clicked not working or loading. If in doubt &#8211; post it as a bug, and we&#8217;ll take it from there!<br /> If possible, please post in the following format &#8211; it helps us SO much if we know what you expected to happen when we chase down a problem!
+                                    </p><p class="man">
+                                        <hr class="x-gap" style="margin: 1.313em 0 0 0;"><ul>
+                                            <li class="man" style="text-align: left;"><strong>Expected Result:</strong>What you expected to happen</li>
+                                            <li class="man" style="text-align: left;"><strong>Actual Result:</strong>What actually happened.</li>
+                                            <li class="man" style="text-align: left;"><strong>Optional</strong>:You&#8217;d help us even more if you could write a step by step, but as long as we understand what you expected to happen vs what actually did, we&#8217;re good.</li>
+                                            <li class="man" style="text-align: left;"><strong>Plugins:</strong>If you were working with i.e ForestPack, GrowFx, Ornatrix, RayFire, PullDownIt, Automodeller, etc, please tell us!</li>
+                                            <li class="man" style="text-align: left;"><strong>Crashlogs</strong>&#8211; If Max crashed, we&#8217;d appreciate it if you attached a crashlog</li>
+                                            <li class="man" style="text-align: left;"><strong>Attachments</strong>&#8211; If you&#8217;re experiencing other issues, like slow renders or hangs, please see if you can&#8217;t share your file with us. We promise not t0 share its content with anyone but the developers!</li>
+                                        </ul>
+                                    <p style="text-align: center;">
+                                        <strong>
+                                            <a href="https://firerender.freshdesk.com/support/solutions/articles/16000009640-how-to-submit-a-good-bug-report">Want the long version? Check out our knowledgebase article!</a>
+                                        </strong>
+                                    </p>
+                                </div><div data-cs-tab-index="2" class="x-tab-pane fade in">
+                                    <strong>Introducing the FireRender forums!</strong></p><p>
+                                        Please feel free to come and join the conversation: Whether you want to share a render, or vent over something which still hasn&#8217;t made it out of beta, or want to ask for new features or featurettes to be implemented.<br /> All we ask, is that you behave yourself &#8211; which means the usual terms and conditions apply: Play nice, and if you can&#8217;t play nice, leave off on the swearing and derogatory remarks, and stick to the facts you&#8217;re discussing. We don&#8217;t believe in policing, but we do retain the right to remove the disruption of people who break this simple rule.<br /> If you chose to share images in the forum, copyright stays firmly with you or the owner of the image, but we hope it&#8217;s OK if we contact you, and ask to use your render, if we see one we&#8217;d like to use for tutorial or marketing purposes &#8211; and we hope of course to see tons of  renders and other images. In addition, if you have tips or tricks to share &#8211; please do!
+                                    </p><p style="text-align: center;">
+                                        <strong>
+                                            <a href="https://firerender.freshdesk.com/support/discussions">In any case, come on over, join the discussion!</a>
+                                        </strong>
+                                    </p><p>&nbsp;
+                                </div><div data-cs-tab-index="3" class="x-tab-pane fade in">
+                                    <strong>Terms and conditions</strong></p><ol>
+                                        <li> The promoter is: <strong>3DTotal Ltd</strong> (company no. 5198320) whose registered office is at Foregate Street, Worcester, Worcestershire, WR1 1DS, UK.</li>
+                                        <li>
+                                            <span style="line-height: 1.5;">Employees of</span><strong style="line-height: 1.5;">3DTotal, Advanced Micro Device</strong><span style="line-height: 1.5;">or their family members or anyone else connected in any way with the competition or helping to set up the competition shall not be permitted to enter the competition.</span>
+                                        </li>
+                                        <li>There is no entry fee and no purchase necessary to enter this competition, but a new, unique bug submission is required to enter. Each unique bug submitted will count as an additional entry to raffle.</li>
+                                        <li>
+                                            Only new, unique bugs will be considered. Unique bugs are defined as: A bug or issue we previously weren’t aware of, and which we can reproduce. To win the raffle, the report needs to be non-trivial – typos in our beta UI, for example are not a bug. In addition, the report must provide enough info to help us track the problem down. We ask you provide a bare minimum based on our bug reporting guidelines, and a crash dump in case Max crashes. <span style="line-height: 1.5;">We reserve the right to unilaterally determine which bug reports are meaningful and which are not.</span>
+                                        </li>
+                                        <li>
+                                            <span style="line-height: 1.5;">Five (5) winners will be chosen at random by</span><strong style="line-height: 1.5;">3DTotal</strong><span style="line-height: 1.5;">from all entries received and verified by</span><strong style="line-height: 1.5;">AMD</strong><span style="line-height: 1.5;">.</span><strong style="line-height: 1.5;">3DTotal and AMD</strong><span style="line-height: 1.5;">reserve the right to give away less than five</span><strong style="line-height: 1.5;">AMD</strong><span style="line-height: 1.5;">FirePro Graphics cards if insufficient eligible bugs are reported. The</span><strong style="line-height: 1.5;">AMD</strong><span style="line-height: 1.5;">FirePro Graphics cards that constitute as a prize for this raffle are: five (5) AMD FirePro W8100 graphics cards. The winners will be shipped the GPU only; Delivered safely but without product box and contents.</span>
+                                        </li>
+                                        <li>The winners will be notified by email and/or letter within 14 days of the closing date. If a winner cannot be contacted or does not claim the prize within 14 days of notification, we reserve the right to withdraw the prize from the winner and pick a replacement winner. <strong>AMD</strong> will ship the prize to the winner worldwide within 14 days of notification.</li>
+                                        <li>Closing date for entry will be July 07<sup>th</sup> 2016. After this date no further entries to the competition will be permitted.</li>
+                                        <li><strong>AMD</strong> reserves the right to cancel or amend the competition and these terms and conditions without notice in the event of a catastrophe, war, civil or military disturbance, act of God or any actual or anticipated breach of any applicable law or regulation or any other event outside of the promoter’s control. Any changes to the competition will be notified to entrants as soon as possible by the promoter.</li>
+                                        <li>No cash alternative to the prizes will be offered. The prizes are not transferable. Prizes are subject to availability and we reserve the right to substitute any prize with another of equivalent value without giving notice.</li>
+                                        <li>The promoter’s decision in respect of all matters to do with the competition will be final and no correspondence will be entered into.</li>
+                                        <li>By entering this competition, an entrant is indicating his/her agreement to be bound by these terms and conditions.</li>
+                                        <li>The competition and these terms and conditions will be governed by [UK] law and any disputes will be subject to the exclusive jurisdiction of the courts of [UK].</li>
+                                        <li>The winner agrees to the use of his/her name and image in any publicity material. Any personal data relating to the winner or any other entrants will be used solely in accordance with current [UK] data protection legislation and will not be disclosed to a third party without the entrant’s prior consent.</li>
+                                        <li>Entry into the competition will be deemed as acceptance of these terms and conditions.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="x-container max width" style="margin: 0px auto;padding: 0px;">
+                        <div class="x-column x-sm x-1-1" style="padding: 0px;">
+                            <a class="x-btn x-btn-square x-btn-global x-btn-block" href="https://github.com/AMDFirePro/FireRender3DSMaxPlugin/releases" target="_blank" data-options="thumbnail: ''">
+                                <i class="x-icon mvn mln mrs x-icon-download" data-x-icon="&#xf019;" aria-hidden="true"></i>Get FireRender Now!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div></div> </article></div></div>
+
+    <script>
+jQuery(document).ready(function($){var windowObj=$(window);var body=$('body');var bodyOffsetBottom=windowObj.scrollBottom();var bodyHeightAdjustment=body.height()-bodyOffsetBottom;var bodyHeightAdjusted=body.height()-bodyHeightAdjustment;var scrollTopAnchor=$('.x-scroll-top');function sizingUpdate(){var bodyOffsetTop=windowObj.scrollTop();if(bodyOffsetTop>(bodyHeightAdjusted*0.25)){scrollTopAnchor.addClass('in');}else{scrollTopAnchor.removeClass('in');}}
+windowObj.bind('scroll',sizingUpdate).resize(sizingUpdate);sizingUpdate();scrollTopAnchor.click(function(){$('html,body').animate({scrollTop:0},850,'easeInOutExpo');return false;});});</script><footer class="x-colophon bottom" role="contentinfo">
+        <div class="x-container max width">
+            <div class="x-social-global">
+                <a href="https://www.facebook.com/AMDUK/?brand_redir=23542086472" class="facebook" title="Facebook" target="_blank">
+                    <i class="x-icon-facebook-square" data-x-icon="&#xf082;" aria-hidden="true"></i>
+                </a><a href="https://twitter.com/AMDFirePro" class="twitter" title="Twitter" target="_blank">
+                    <i class="x-icon-twitter-square" data-x-icon="&#xf081;" aria-hidden="true"></i>
+                </a><a href="https://www.linkedin.com/groups/1833178" class="linkedin" title="LinkedIn" target="_blank">
+                    <i class="x-icon-linkedin-square" data-x-icon="&#xf08c;" aria-hidden="true"></i>
+                </a>
+            </div><div class="x-colophon-content">© 2016 Advanced Micro Devices, Inc. All rights reserved. AMD, the AMD logo, and FirePro are trademarks or registered trademarks of Advanced Micro Devices, Inc. DirectX is a trademark of Microsoft Corporation. Other names are used for identification purposes only and may be trademarks of the respective owners. www.amd.com/firepro</div>
+        </div>
+    </footer></div>
+    <script type="text/javascript" src="widget/freshwidget.js"></script>
+    <script type="text/javascript">/*<![CDATA[*/FreshWidget.init("",{"queryString":"&widgetType=popup&formTitle=Report+a+bug&submitThanks=Thank+you+for+participating!+And+remember%2C+you've+now+entered+our+raffle+-+best+of+luck+to+you!&captcha=yes","utf8":"✓","widgetType":"popup","buttonType":"text","buttonText":"Report a Bug","buttonColor":"white","buttonBg":"#e30613","alignment":"4","offset":"235px","submitThanks":"Thank you for participating! And remember, you've now entered our raffle - best of luck to you!","formHeight":"500px","captcha":"yes","url":"https://firerender.freshdesk.com"});/*]]>*/</script><div class="x-content-dock left x-content-dock-off" style="width: 350px; left: -400px;">
+        <div id="text-2" class="widget widget_text">
+            <div class="textwidget">
+                <h2 class="h-feature-headline mtn center-text h4">
+                    <span>
+                        <i class="x-icon-chevron-right" data-x-icon="&#xf054;"></i>New version available!
+                    </span>
+                </h2><p>
+                    FireRender version 1.6.48 is currently available and ready for download!
+                    Read all about the current version's changes and new features <a href="https://github.com/AMDFirePro/FireRender3DSMaxPlugin/releases">here</a>. <a class="x-btn x-btn-rounded x-btn-large x-btn-block" href="https://github.com/AMDFirePro/FireRender3DSMaxPlugin/releases" data-options="thumbnail: ''">Get FireRender</a>
+            </div>
+        </div> <a href="#" class="x-close-content-dock">
+            <span>&#x2716;</span> <span class="visually-hidden">Close the Content Dock</span>
+        </a>
+    </div>
+    <script id="x-content-dock-js">
+jQuery(document).ready(function($){$.fn.scrollBottom=function(){return $(document).height()-this.scrollTop()-this.height();};var executed=false;var windowObj=$(window);var body=$('body');var bodyOffsetBottom=windowObj.scrollBottom();var bodyHeightAdjustment=body.height()-bodyOffsetBottom;var bodyHeightAdjusted=body.height()-bodyHeightAdjustment;var contentDock=$('.x-content-dock');function sizingUpdate(){var bodyOffsetTop=windowObj.scrollTop();if(bodyOffsetTop>(bodyHeightAdjusted*0.3)){if(!executed){executed=true;contentDock.toggleClass('x-content-dock-off').toggleClass('x-content-dock-on').css('left','20px');}}
+$('.x-close-content-dock').click(function(e){e.preventDefault();contentDock.toggleClass('x-content-dock-off').toggleClass('x-content-dock-on').css('left','-450px');});}
+windowObj.bind('scroll',sizingUpdate).resize(sizingUpdate);sizingUpdate();});</script>
+    <script type='text/javascript' src="wp-content/themes/x/framework/js/dist/site/x-body.min7c7d.js?189db0"></script>
+    <script type='text/javascript' src="wp-includes/js/comment-reply.min7c7d.js?189db0"></script>
+    <script type='text/javascript' src="wp-content/plugins/cornerstone/assets/js/dist/site/cs-body.min7c7d.js?189db0"></script>
+    <script type='text/javascript' src="wp-includes/js/wp-embed.min7c7d.js?189db0"></script>
+
+
+    </span>
+    <!-- BUG BASH -->
+    <!-- BUG BASH -->
+    <!-- BUG BASH -->
+    <!-- BUG BASH -->
+    <!-- BUG BASH -->
+    
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
