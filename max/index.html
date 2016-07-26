@@ -113,25 +113,120 @@
           <div class="col-xs-12">
             <h2>10 Key Features You’ll Love </h2>
             <div class="row">
-            <div class="col-md-6">
-                <ol class="keyol">
-                    <li>It's <strong>Fast</strong>. Out of the box, the global illumination engine delivers physically accurate, photorealistic renderings, without any prior knowledge of complicated rendering or material setups.</li>
-                    <li>Built on OpenCL™, it's <strong>Hardware Agnostic</strong>, so it runs on virtually any hardware, including any combination of GPUs and CPUs.</li>
-                    <li>It's <strong>Easy</strong> to use. A push-button global illumination solution, it seamlessly combines physically accurate materials with existing 3ds Max® maps; existing 3ds Max® photometric lights can be used as well. Also, to help newcomers, most existing scenes are rendered without need for major rework.</li>
-                    <li><strong>Integrated Materials</strong> are simple to use and editable in the 3ds Max® Material Slate Editor as nodes.</li>
-                </ol>
+                  <div class="col-md-6">
+                      <ol class="keyol">
+                          <li>It's <strong>Fast</strong>. Out of the box, the global illumination engine delivers physically accurate, photorealistic renderings, without any prior knowledge of complicated rendering or material setups.</li>
+                          <li>Built on OpenCL™, it's <strong>Hardware Agnostic</strong>, so it runs on virtually any hardware, including any combination of GPUs and CPUs.</li>
+                          <li>It's <strong>Easy</strong> to use. A push-button global illumination solution, it seamlessly combines physically accurate materials with existing 3ds Max® maps; existing 3ds Max® photometric lights can be used as well. Also, to help newcomers, most existing scenes are rendered without need for major rework.</li>
+                          <li><strong>Integrated Materials</strong> are simple to use and editable in the 3ds Max® Material Slate Editor as nodes.</li>
+                      </ol>
+                  </div>
+                  <div class="col-md-6">
+                      <ol start="5" class="keyol">
+                          <li>It comes with a helpful and beautiful <a href="../MaterialLibrary/index.html" rel=""><strong>Material Library</strong></a>, ready to use. Artists can use, easily adjust, and quickly learn to make their own. </li>
+                          <li><strong>Active Shade Viewport Integration</strong> means you can work with FireRender in real time, so you can see your changes as you make them.</li>
+                          <li><strong>Physically Correct</strong> materials and lighting allow you to make true design decisions with global illumination—including caustics.</li>
+                          <li><strong>Emissive And Photometric Lighting</strong>, as well as lights from HDRI environments, let you blend a scene in with its surroundings.</li>
+                          <li>Plug your laptop in and render even faster with <a href="http://www.amd.com/en-us/innovations/software-technologies/technologies-gaming/xconnect" target="_blank">AMD XConnect™</a> Technology.</li>
+                          <li>It’s <strong>Free</strong></li>
+                      </ol>
+                  </div>
             </div>
-            <div class="col-md-6">
-                <ol start="5" class="keyol">
-                    <li>It comes with a helpful and beautiful <a href="../MaterialLibrary/index.html" rel=""><strong>Material Library</strong></a>, ready to use. Artists can use, easily adjust, and quickly learn to make their own. </li>
-                    <li><strong>Active Shade Viewport Integration</strong> means you can work with FireRender in real time, so you can see your changes as you make them.</li>
-                    <li><strong>Physically Correct</strong> materials and lighting allow you to make true design decisions with global illumination—including caustics.</li>
-                    <li><strong>Emissive And Photometric Lighting</strong>, as well as lights from HDRI environments, let you blend a scene in with its surroundings.</li>
-                    <li>Plug your laptop in and render even faster with <a href="http://www.amd.com/en-us/innovations/software-technologies/technologies-gaming/xconnect" target="_blank">AMD XConnect™</a> Technology.</li>
-                    <li>It’s <strong>Free</strong></li>
-                </ol>
-            </div>
+          </div>
         </div>
+        
+        <div class="row">
+          <div class="col-xs-12">
+              <button class="featuresbtn" data-toggle="collapse" data-target="#demo">Features In Detail</button>
+              <div id="demo" class="collapse">
+              <h3>Rendering</h3>
+              <ul>
+                <li>Active Shade Viewport Integration means you can work with Radeon ProRender in real time with physically accurate raytracing, so you can see your changes as you make them.</li>
+                <li>Instant scene preview with in ActiveShade.</li>
+                <li>Render modes support global illumination, direct illumination (with/without shadow), wireframe, diffuse albedo, position, normal, texture coordinates, ambient occlusion.</li>
+                <li>Render Elements (aovs) (render layers) for post processing including support for opacity, world coordinates, UVs, material index, geometric normals, shading normals.</li>
+                <li>Region rendering support.</li>
+                <li>Batch/background rendering.</li>
+                <li>Control over frame completion and rendering with the ability to pause, set render pass limits and duration.</li></li>
+                <li>Render status window for progress and estimated completion.</li>
+                <li>3ds Max tone mapping and environment exposure controls using the 3ds Max workflow, meaning existing tone mappers are support including the standard 3ds Max tone mapper.</li>
+                <li>Assign local resources (GPU and CPU) independently to either renderer.</li>
+                <li>Near linear acceleration when adding additional GPUs.</li>
+                <li>Built on OpenCL™, it's Hardware Agnostic, so it runs on virtually any hardware, including any combination of GPUs and CPUs.</li>
+              </ul>
+
+              <h3>Materials</h3>
+              <ul>
+                <li>Intuitive material design, based on layered representation of real-world materials.</li>
+                <li>A library of high quality materials.</li>
+                <li>Materials are simple to use and editable in the 3ds Max® Material Slate Editor as nodes. </li>There is also an Uber material for those who prefer this approach.</li>
+                <li>Physically Correct materials and lighting allow you to make true design decisions with global illumination—including caustics.</li>
+                <li>Support for standard 3ds Max maps and additional new Radeon ProRender maps.</li>
+                <li>Support for Corona materials.</li>
+                <li>Interactive preview of Materials via the material browser thumbnails.</li>
+                <li>Import/Export Radeon ProRender materials via an.xml file so materials can be shared.</li>
+                <li>UV generation modes and basic transform info for maps, which include scaling, offset and rotations.</li>
+                <li>Change textures and apply tiling/scaling while rendering in Active Shade.</li>
+                <li>Interactive preview of materials via 3ds Max material editor thumbnails and Preview Window.</li>
+                <li>Shadow catcher materials.</li>
+                <li>Displacement node/map support.</li>
+                <li>Support for Max 2017 physical material. *</li>
+                <li>Accelerated Subsurface Scattering. *</li>
+              </ul>
+
+              <h3>Lighting</h3>
+              <ul>
+                <li>Emissive And Photometric Lighting, as well as lights from HDRI environments, let you blend a scene in with its surroundings.</li>
+                <li>Supports 3ds Max standard and photometric lights.</li>
+                <li>Radeon ProRender photometric light type.</li>
+                <li>Support for fast IES maps and light distribution.</li>
+                <li>Emissive materials to allow any geometry emit light.</li>
+                <li>Lighting values for emissive materials with the addition of lumen/lux/candela.</li>
+                <li>Support for textured emission.</li>
+                <li>Support HDRI environment mapping and lighting.</li>
+                <li>Ability to modify environment maps for half dome*, scale* and resizing*.</li>
+                <li>Ground plane shadows and reflections.</li>
+                <li>Support to use a backplate image as a render background.</li>
+                <li>Support for 3ds Max tone mapping and environment exposure controls.</li>
+                <li>Default lighting for scenes with no Radeon ProRender supported lights.</li>
+                <li>Emissive multiplier, real units for lights, and kelvin temperature value.</li>
+                <li>Accurate preview of all light types in ActiveShade with interactive update.</li>
+                <li>Real world units for area lights.</li>
+                <li>Atmospheric support. </li>
+              </ul>
+                
+              <h3>Camera</h3>
+              <ul>
+                <li>Manage/select different cameras which are rendered in interactive mode via ActiveShade.</li>
+                <li>Support for 3ds Max camera presets. </li>
+                <li>Virtual Reality (VR) camera support. Using a Virtual Reality (VR) headset experience stunning 360 photorealistic raytraced environments created by Radeon ProRender. These VR environments can also be published YouTube.</li>
+                <li>Support for 360 cameras (photospheres).</li>
+                <li>Depth of Field (DOF) support.</li>
+                <li>Motion blur support.</li>
+                <li>Lens shift support. *</li>
+              </ul>
+                
+              <h3>Workflow/UI</h3>
+              <ul>
+                <li>Installer and support for 3ds Max 2014*, 2015*, 2016 and 2017.</li>
+                <li>It's Easy to use. A push-button global illumination solution, it seamlessly combines physically accurate materials with existing 3ds Max® maps; existing 3ds Max® photometric lights can be used as well. Also, to help newcomers, most existing scenes are rendered without need for major rework.</li>
+                <li>Adjust tone mapping and exposure controls interactively with preview in ActiveShade.</li>
+                <li>3ds Max tone mapping and environment exposure controls using the 3ds Max workflow, meaning existing tone mappers are support including the standard 3ds Max tone mapper.</li>
+                <li>3ds Max atmospherics support e.g. turbidity and sky albedo.</li>
+                <li>Viewport Update including undo/redo tracking and smart caching.</li>
+                <li>Material editing UI in both compact and slate material editors.</li>
+                <li>Debug/tracing feature for tracking down issues and problems.</li>
+                <li>Ability to create/edit/apply Radeon ProRender materials.</li>
+                <li>Radeon ProRender scene import and export.</li>
+                <li>Integrates into existing 3ds Max workflows.</li>
+                <li>Plug your laptop in and render even faster with AMD XConnect™ Technology.</li>
+                <li>Batch/background rendering.</li>
+                <li>Integration with MaxScript.</li>
+              </ul>
+
+              <p style="font-size:13px; padding-top:25px;">* Coming soon to Radeon ProRender.</p>
+
+              </div>
           </div>
         </div>
         
