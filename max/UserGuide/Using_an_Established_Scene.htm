@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Units</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "2.0_1";
+</script>
+ <meta name="topic-breadcrumbs" content="Chapter 2: Radeon ProRender for 3dsmax Tutorial" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<div style="width: 100%; position: relative;" id="header">
+	<p style="text-align: right; mso-bidi-font-size: 11.0pt; line-height: 107%; 
+		 mso-bidi-font-weight: normal; font-size: 12pt; margin-top: 0pt;"><b><span 
+	 style="line-height: 115%; font-family: Arial, sans-serif; mso-fareast-font-family: Calibri; 
+	 mso-fareast-theme-font: minor-latin; color: #333333; background: #ffffff; 
+	 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;">Radeon 
+	 ProRender</span></b><b><span lang="EN-US" xml:lang="EN-US"> for Autodesk® 
+	 3ds Max®</span></b></p>
+</div>
+
+
+<h1>Setting Units</h1>
+<p><span style="mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; 
+		 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;">When 
+ setting up a project &#160;always make sure that your units are set up 
+ correctly. &#160;If your unit conversion is wrong then there is a knock 
+ off effect upon a lot of other things that are going on in your scene, 
+ from material coordinates to lighting falloff etc.</span></p>
+<p><span style="mso-fareast-font-family: Calibri; mso-bidi-font-family: 'Times New Roman'; 
+		 mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-AU; mso-fareast-language: EN-US; 
+		 mso-bidi-language: AR-SA;">S</span>etting the units for the scene 
+ can effect the focal length of the camera and other rendering parameters.<span 
+	 style="mso-spacerun: yes;">&#160;</span>&#160;When opening a new file 
+ you should <span style="font-weight: bold;">not</span> select the <span 
+	 style="font-weight: bold;">Rescale the File Objects to the System 
+ Unit Scale</span> conversion option on opening and use the scene default 
+ units.</p>
+<p style="font-size: 11.0pt; line-height: 115%; font-family: Calibri, sans-serif; 
+	 mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-latin; 
+	 mso-hansi-theme-font: minor-latin; text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/unit_mismatch.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:324px;" border="1" /></p>
+<p>It is advisable that you select standard units for your projects e.g. 
+ centimeters, meters, inches and stick with them throughout your build. 
+ &#160;It is not advisable to convert these to different units during a 
+ project or to select the convert option when opening a file. &#160;Take 
+ the default units of the project and continue to work with these.</p>
+<p>To establish the units for your project select <span style="font-weight: bold;">Customize 
+ &gt; Units Setup</span>.</p>
+<p style="font-size: 11.0pt; line-height: 115%; font-family: Calibri, sans-serif; 
+	 mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-latin; 
+	 mso-hansi-theme-font: minor-latin; text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/unit_setup.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:304px;" border="1" /></p>
+<p>You can leave the Display Unit Scale as <span style="font-weight: bold;">Generic 
+ Units.</span></p>
+<p style="font-size: 11.0pt; line-height: 115%; font-family: Calibri, sans-serif; 
+	 mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-latin; 
+	 mso-hansi-theme-font: minor-latin; text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/unit_setup2.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:297px;" border="1" /></p>
+<p>The press <span style="font-weight: bold;">System Unit Setup</span> 
+ and select 1 Unit = 1.0 Centimeters &#160;or Meters or whatever you have 
+ decided is to be your standard.</p>
+<p style="font-size: 11.0pt; line-height: 115%; font-family: Calibri, sans-serif; 
+	 mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-latin; 
+	 mso-hansi-theme-font: minor-latin; text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/unit_setup3.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:264px;" border="1" /></p>
+<p>If you try and change this value in a scene after you starting building, 
+ you can get some very bad results, so if you do need to update a scene 
+ into a new unit size, create a fresh scene, set up the units and then 
+ merge the old scene into it and you should be able to avoid the horrible 
+ conversions that might occur on some objects. You will still need to change 
+ the size of some of your materials if you have used the option to use 
+ real world scale, as they will reflect your old conditions.</p>
+<p>&#160;</p>
+<div style="width: 100%; position: relative;" id="footer">
+	<p style="text-align: center;"><span style="line-height: 115%; mso-ascii-theme-font: minor-latin; 
+										 mso-fareast-font-family: Calibri; 
+										 mso-fareast-theme-font: minor-latin; 
+										 mso-hansi-theme-font: minor-latin; 
+										 mso-bidi-font-family: 'Times New Roman'; 
+										 mso-bidi-theme-font: minor-bidi; 
+										 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; 
+										 mso-bidi-language: AR-SA; font-family: Arial, sans-serif; 
+										 font-size: 10pt;">©</span><span 
+	 style="color: rgb(34, 34, 34); line-height: normal; orphans: auto; 
+	 widows: 1; -webkit-text-stroke-width: 0px; display: inline	 ! important ; 
+	 float: none; background-color: #ffffff; font-family: Arial, sans-serif; 
+	 font-size: 10pt;"> 2016 Advanced Micro Devices, Inc. All rights reserved. 
+	 AMD, the AMD logo, Radeon ProRender, and FirePro are trademarks or 
+	 registered trademarks of Advanced Micro Devices, Inc. Other names 
+	 are used for identification purposes only and may be trademarks of 
+	 the respective owners.</span><span style="font-size: 11.0pt; line-height: 115%; 
+										 font-family: Calibri, sans-serif; 
+										 mso-ascii-theme-font: minor-latin; 
+										 mso-fareast-font-family: Calibri; 
+										 mso-fareast-theme-font: minor-latin; 
+										 mso-hansi-theme-font: minor-latin; 
+										 mso-bidi-font-family: 'Times New Roman'; 
+										 mso-bidi-theme-font: minor-bidi; 
+										 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; 
+										 mso-bidi-language: AR-SA;"> </span>&#160;</p>
+</div>
+</body>
+</html>

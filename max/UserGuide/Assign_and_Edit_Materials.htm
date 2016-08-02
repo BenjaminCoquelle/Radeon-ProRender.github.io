@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Assign and Edit Materials</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "2.0_5";
+</script>
+ <meta name="topic-breadcrumbs" content="Chapter 2: Radeon ProRender for 3dsmax Tutorial" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<div style="width: 100%; position: relative;" id="header">
+	<p style="text-align: right; mso-bidi-font-size: 11.0pt; line-height: 107%; 
+		 mso-bidi-font-weight: normal; font-size: 12pt; margin-top: 0pt;"><b><span 
+	 style="line-height: 115%; font-family: Arial, sans-serif; mso-fareast-font-family: Calibri; 
+	 mso-fareast-theme-font: minor-latin; color: #333333; background: #ffffff; 
+	 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;">Radeon 
+	 ProRender</span></b><b><span lang="EN-US" xml:lang="EN-US"> for Autodesk® 
+	 3ds Max®</span></b></p>
+</div>
+
+
+<h1>Assign and Edit Materials</h1>
+<h2>Assigning Materials</h2>
+<p>The car we imported has materials already assigned to it's parts. &#160;&#160;We 
+ are going to remove some of these materials so that we can go through 
+ the process of assigning others. &#160;Click on the car body which should 
+ highlight <span style="font-weight: bold;">Nissan-GTR -&gt; HDM_070</span> 
+ object in the scene hierarchy. &#160;Type <span style="font-weight: bold;">$ 
+ .mat = null</span> in the 3ds Max® script commend line. &#160;</p>
+<p style="text-align: center;"><img src="Chapter_2_Images/car_body_mat_clear.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:823px;" border="1" /></p>
+<p>To remove the materials for any other objects repeat this process. &#160;Or, 
+ you can leave the current materials that are assigned and overwrite them 
+ when you assign a new material.</p>
+<p>To display the Materials Library open the <span style="font-weight: bold;">Slate 
+ Material Editor</span> either by using the <span style="font-weight: bold;">Rendering 
+ -&gt; Material Editor -&gt; Slate Material Editor</span> menu option, 
+ clicking the <span style="font-weight: bold;">Material Editor</span> button 
+ or hitting the <span style="font-weight: bold;">M</span> key.</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/image006.jpg" alt="ME.jpg" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:228px;" border="1" /></p>
+<p>Navigate to the <span style="font-weight: bold;">Radeon ProRender_material</span> 
+ libraries at the bottom of the left scroll bar in the Material Editor.</p>
+<p style="text-align: center;"><img src="Chapter_2_Images/image024.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:865px;" border="1" /></p>
+<p>&#160;</p>
+<p>Select material library <span style="font-weight: bold;">Radeon ProRender_metallic_paint.mat</span> 
+ and in the dropdown select a material.&#160;&#160;We will be using <span 
+	 style="font-weight: bold;">Car_Paint_Blue</span>. &#160;Drag the material 
+ into the workspace, click the body of the car if its not already selected, 
+ then right click over the material and select <span style="font-weight: bold;">Assign 
+ Material to Selection</span> to assign it to the car's body geometry.</p>
+<p style="text-align: center;"><img src="Chapter_2_Images/image026.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:836px;" border="1" /></p>
+<p>Select the car tires and find <span style="font-weight: bold;">Radeon 
+ ProRender_Rubber.mat</span> in the material editor, in the drop down select 
+ <span style="font-weight: bold;">Rubber_SmoothMatte</span> and assign 
+ it to the tires.</p>
+<p style="text-align: center;"><img src="Chapter_2_Images/image028.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:868px;" border="1" /></p>
+<p>Select the rims and under the <span style="font-weight: bold;">Radeon 
+ ProRender_Metal.ma</span>t material library select the <span style="font-weight: bold;">Chrome</span> 
+ material and assign it to the rims.</p>
+<p style="text-align: center;"><img src="Chapter_2_Images/image030.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:889px;" border="1" /></p>
+<p>&#160;</p>
+<p>Select the plastic parts (including the interiors). &#160;Under the 
+ <span style="font-weight: bold;">Radeon ProRender_Plastic.mat</span> material 
+ library select <span style="font-weight: bold;">Plastic_Matt_Black</span> 
+ and assign it to the plastic parts.</p>
+<p style="text-align: center;"><img src="Chapter_2_Images/image032.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:906px;" border="1" /></p>
+<p>Select the windscreen and all the glass components. &#160;Under the 
+ <span style="font-weight: bold;">Radeon ProRender_Glass.mat</span> material 
+ library select the <span style="font-weight: bold;">Glass_Solid_Clear</span> 
+ material and assign it to the windscreen.</p>
+<p style="text-align: center;"><img src="Chapter_2_Images/image034.jpg" alt="" border="0" style="width:100%; max-width:908px" /></p>
+<p>&#160;</p>
+<p>Select the lights. &#160;Under the <span style="font-weight: bold;">Radeon 
+ ProRender_emmisive.mat</span> material library select the <span style="font-weight: bold;">Emmissive_Flourescent_White</span> 
+ material and assign it to the Light geometry.</p>
+<p style="text-align: center;"><img src="Chapter_2_Images/image036.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:859px;" border="1" /></p>
+<p>Lastly select the floor geometry. &#160;Under the <span style="font-weight: bold;">Radeon 
+ ProRender_Concrete.mat</span> material library select the <span style="font-weight: bold;">Concrete_WornBare_SmoothBump</span> 
+ material and assign it to the floor.&#160;&#160;We will be adjusting this 
+ material to suit our needs next.</p>
+<p style="text-align: center;"><img src="Chapter_2_Images/image038.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:836px;" border="1" /></p>
+<h2>Editing Materials</h2>
+<p>We are now going to change the concrete floor so it looks more like 
+ a car dealers display floor. &#160;&#160;&#160;The current concrete looks 
+ a little dull so let's give it a bit more polish.</p>
+<p style="text-align: center;"><img src="Chapter_2_Images/car_concrete.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:612px;" border="1" /></p>
+<p>&#160;</p>
+<p>First remove the bitmap from the roughness input of the Radeon ProRender 
+ microfacet material.&#160;&#160;We will be leaving it as a smooth, semi 
+ reflective surface.</p>
+<p style="text-align: center;"><img src="Chapter_2_Images/image040.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:870px;" border="1" /></p>
+<p>Change all bitmaps tiling to 100. &#160;You can play around with the 
+ tiling until you get something that looks like a polished showroom floor. 
+ &#160;</p>
+<p style="text-align: center;"><img src="Chapter_2_Images/image042.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:850px;" border="1" /></p>
+<p>Select the blend material which is the main material and change the 
+ weight to 0.5.</p>
+<p style="text-align: center;"><img src="Chapter_2_Images/image044.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:837px;" border="1" /></p>
+<p>&#160;</p>
+<div style="width: 100%; position: relative;" id="footer">
+	<p style="text-align: center;"><span style="line-height: 115%; mso-ascii-theme-font: minor-latin; 
+										 mso-fareast-font-family: Calibri; 
+										 mso-fareast-theme-font: minor-latin; 
+										 mso-hansi-theme-font: minor-latin; 
+										 mso-bidi-font-family: 'Times New Roman'; 
+										 mso-bidi-theme-font: minor-bidi; 
+										 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; 
+										 mso-bidi-language: AR-SA; font-family: Arial, sans-serif; 
+										 font-size: 10pt;">©</span><span 
+	 style="color: rgb(34, 34, 34); line-height: normal; orphans: auto; 
+	 widows: 1; -webkit-text-stroke-width: 0px; display: inline	 ! important ; 
+	 float: none; background-color: #ffffff; font-family: Arial, sans-serif; 
+	 font-size: 10pt;"> 2016 Advanced Micro Devices, Inc. All rights reserved. 
+	 AMD, the AMD logo, Radeon ProRender, and FirePro are trademarks or 
+	 registered trademarks of Advanced Micro Devices, Inc. Other names 
+	 are used for identification purposes only and may be trademarks of 
+	 the respective owners.</span><span style="font-size: 11.0pt; line-height: 115%; 
+										 font-family: Calibri, sans-serif; 
+										 mso-ascii-theme-font: minor-latin; 
+										 mso-fareast-font-family: Calibri; 
+										 mso-fareast-theme-font: minor-latin; 
+										 mso-hansi-theme-font: minor-latin; 
+										 mso-bidi-font-family: 'Times New Roman'; 
+										 mso-bidi-theme-font: minor-bidi; 
+										 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; 
+										 mso-bidi-language: AR-SA;"> </span>&#160;</p>
+</div>
+</body>
+</html>

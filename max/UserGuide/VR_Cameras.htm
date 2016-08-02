@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+<title>VR Cameras</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "5.0_4";
+</script>
+ <meta name="topic-breadcrumbs" content="Chapter 5: Working with Cameras" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<div style="width: 100%; position: relative;" id="header">
+	<p style="text-align: right; mso-bidi-font-size: 11.0pt; line-height: 107%; 
+		 mso-bidi-font-weight: normal; font-size: 12pt; margin-top: 0pt;"><b><span 
+	 style="line-height: 115%; font-family: Arial, sans-serif; mso-fareast-font-family: Calibri; 
+	 mso-fareast-theme-font: minor-latin; color: #333333; background: #ffffff; 
+	 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;">Radeon 
+	 ProRender</span></b><b><span lang="EN-US" xml:lang="EN-US"> for Autodesk® 
+	 3ds Max®</span></b></p>
+</div>
+
+
+<h1>VR Cameras</h1>
+<p>Currently Radeon ProRender provides support for 2 types of VR cameras. 
+ These include:</p>
+<ul style="list-style: disc;">
+	<li><p>360 degree longitudinal panorama or photo-sphere camera. &#160;This 
+	 provides a rendering of the whole scene mapped onto a sphere and is 
+	 useful when publishing to sites like YouTube that support 360 degree 
+	 images or videos.</p></li>
+	<li><p>360 degree longitudinal stereoscopic photo-sphere camera. &#160;This 
+	 provides a rendering of the scene in two 360 degree images that are 
+	 stereoscopic placed in an over and under configuration on a single 
+	 frame suitable for viewing in VR goggles. e.g. see the image below.</p></li>
+</ul>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/vrCameraSample.PNG" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:875px;" border="1" /></p>
+<p>To take advantage of the Radeon ProRender VR features it is just a simple 
+ matter of placing a physical camera at the preferred location in your 
+ scene and changing the render setting so that the preferred output of 
+ <span style="font-weight: bold;">LatitudeLongitude360</span> or <span 
+	 style="font-weight: bold;">LatitudeLongitudeStereo</span> is selected 
+ from <span style="font-weight: bold;">Render Settings -&gt; Camera.</span></p>
+<p style="font-weight: bold; text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/VR_render_setting_camera.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:340px;" border="1" /></p>
+<p>Then render either in <span style="font-weight: bold;">Production Rendering</span> 
+ Mode or <span style="font-weight: bold;">ActiveShade Mode.</span></p>
+<p>Below we have the <span style="font-weight: bold;">Vehicle_Booth_Demo</span> 
+ scene form the samples provided with the Radeon ProRender download. &#160;Lets 
+ reposition one of the camera so we can take advantage of a 360 degree 
+ view.</p>
+<p>Change the view so you have the top by pressing <span style="font-weight: bold;">T</span>. 
+ &#160;Select <span style="font-weight: bold;">Camera001</span> right click 
+ it and select <span style="font-weight: bold;">Move</span>. &#160;Move 
+ it so that it is in between the two cars. &#160;As Camera001 is a targeted 
+ camera you should see that it will automatically remain pointing to it's 
+ target in the middle of the scene. &#160;Remove the pillar/stand from 
+ the centre of the scene so we have a better view.</p>
+<p>&#160;</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/VR_camera_move.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:1029px;" border="1" /></p>
+<p>Change the view back to <span style="font-weight: bold;">Camera001</span> 
+ by right clicking the view and selecting <span style="font-weight: bold;">Camera001</span>.</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/vr_change__camera1.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:1004px;" border="1" /></p>
+<p>Open the <span style="font-weight: bold;">Render Setup</span> dialog 
+ and change the <span style="font-weight: bold;">Camera</span> drop down 
+ to <span style="font-weight: bold;">LatitudeLongitude360.</span></p>
+<p style="font-weight: bold; text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/vr_latlong360.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:372px;" border="1" /></p>
+<p>Change any of the others settings to suit your preferences &#160;and 
+ desired render. &#160;Press <span style="font-weight: bold;">Render</span> 
+ to see the result.</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/vr_latlong360_render.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:972px;" border="1" /></p>
+<p>Open the Render Setup again and change the <span style="font-weight: bold;">Camera</span> 
+ drop down to <span style="font-weight: bold;">LatitudeLongitudeStereo</span>.</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/vr_latlongstereo_render.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:970px;" border="1" /></p>
+<p>&#160;</p>
+<div style="width: 100%; position: relative;" id="footer">
+	<p style="text-align: center;"><span style="line-height: 115%; mso-ascii-theme-font: minor-latin; 
+										 mso-fareast-font-family: Calibri; 
+										 mso-fareast-theme-font: minor-latin; 
+										 mso-hansi-theme-font: minor-latin; 
+										 mso-bidi-font-family: 'Times New Roman'; 
+										 mso-bidi-theme-font: minor-bidi; 
+										 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; 
+										 mso-bidi-language: AR-SA; font-family: Arial, sans-serif; 
+										 font-size: 10pt;">©</span><span 
+	 style="color: rgb(34, 34, 34); line-height: normal; orphans: auto; 
+	 widows: 1; -webkit-text-stroke-width: 0px; display: inline	 ! important ; 
+	 float: none; background-color: #ffffff; font-family: Arial, sans-serif; 
+	 font-size: 10pt;"> 2016 Advanced Micro Devices, Inc. All rights reserved. 
+	 AMD, the AMD logo, Radeon ProRender, and FirePro are trademarks or 
+	 registered trademarks of Advanced Micro Devices, Inc. Other names 
+	 are used for identification purposes only and may be trademarks of 
+	 the respective owners.</span><span style="font-size: 11.0pt; line-height: 115%; 
+										 font-family: Calibri, sans-serif; 
+										 mso-ascii-theme-font: minor-latin; 
+										 mso-fareast-font-family: Calibri; 
+										 mso-fareast-theme-font: minor-latin; 
+										 mso-hansi-theme-font: minor-latin; 
+										 mso-bidi-font-family: 'Times New Roman'; 
+										 mso-bidi-theme-font: minor-bidi; 
+										 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; 
+										 mso-bidi-language: AR-SA;"> </span>&#160;</p>
+</div>
+</body>
+</html>

@@ -1,4 +1,0 @@
-(function() {
-var toc =  [{"type":"item","name":"Overview","url":"Overview.htm"},{"type":"item","name":"System Requirements","url":"System_Requirements.htm"},{"type":"item","name":"Install, License, and Run FireRender for 3dsmax","url":"Install,_License,_and_Run_FireRender_for_3dsmax.htm"},{"type":"item","name":"Choosing FireRender as Your Renderer","url":"Choosing_FireRender_as_Your_Renderer.htm"},{"type":"item","name":"Material Library","url":"Material_Library.htm"},{"type":"item","name":"Help Resources","url":"Help_Resources.htm"}];
-window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
-})();

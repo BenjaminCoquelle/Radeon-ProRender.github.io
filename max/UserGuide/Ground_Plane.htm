@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Ground Plane</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "4.0_5";
+</script>
+ <meta name="topic-breadcrumbs" content="Chapter 4: Working with Lights" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<div style="width: 100%; position: relative;" id="header">
+	<p style="text-align: right; mso-bidi-font-size: 11.0pt; line-height: 107%; 
+		 mso-bidi-font-weight: normal; font-size: 12pt; margin-top: 0pt;"><b><span 
+	 style="line-height: 115%; font-family: Arial, sans-serif; mso-fareast-font-family: Calibri; 
+	 mso-fareast-theme-font: minor-latin; color: #333333; background: #ffffff; 
+	 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;">Radeon 
+	 ProRender</span></b><b><span lang="EN-US" xml:lang="EN-US"> for Autodesk® 
+	 3ds Max®</span></b></p>
+</div>
+
+
+<h1>Ground Plane</h1>
+<p>The Fire Render Ground Plane feature allows you to quickly add an invisible 
+ plane to your scene that will cast shadows for reflections onto an HDRI 
+ environment map simulating the effects of the ground. &#160;This is particularly 
+ useful if you environment map has ground as part of the image.</p>
+<p>It is assumed you are familiar with setting up an HDRI environment map 
+ from the <a href="Set_up_HDRI_Environment.htm">Set up HDRI Environment</a> 
+ chapter previously discussed. &#160;&#160;Also you will probably need 
+ to add some lights to your scene from the <a href="Using_3ds_Max_Photometric_Lights.htm">Using 
+ 3ds Max® Photometric Lights</a> chapter.</p>
+<p>Below we have set up a scene with an HDRI environment map, a teapot 
+ and 2 photometric lights. &#160;You should set up a similar scene if you 
+ want to use the Radeon ProRender Ground Plane feature. &#160;You can see that 
+ it looks like the teapot is floating in space and is not associated with 
+ the ground.</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/ground_plane_scene.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:1137px;" border="1" /></p>
+<p>To add a Ground Plane from the lights drop down select the Radeon ProRender 
+ specific light type. &#160;This will enable you to add a specific Radeon ProRender 
+ object. &#160;Once selected press the frEnvironment object button to activate 
+ this object's addition to the scene.</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/ground_plane_object.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:184px;" border="1" /><img src="Radeon_ProRender_3dsMax_Images/ground_plane_frEnvironment.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:152px;" border="1" /></p>
+<p>You can then click anywhere in you scene to add the object. &#160;The 
+ object will appear in the scene as a diamond shaped object. &#160;If you 
+ have ActiveShade rendering on you will see the result immediately. &#160;As 
+ the Shadow and Refection check boxes are ticked you will get both effects 
+ in the initial render. &#160;The Ground Plane will be created at a height 
+ of 0 so if your teapot was created with it's base at 0,0,0 you will see 
+ a shadow and reflection effect that makes it look like the teapot is sitting 
+ on the wet ground.</p>
+<p>&#160;</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/ground_plane_shadow_reflect.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:1161px;" border="1" /></p>
+<p>To remove the Reflections and only display the Shadows un-check the 
+ Reflection check box. &#160;</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/ground_plane_uncheck_reflect.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:173px;" border="1" /></p>
+<p>&#160;</p>
+<p>The teapot will now only cast a shadow on the ground and the effect 
+ of the wet reflective surface will have gone.</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/ground_plane_shadow2.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:654px;" border="1" /></p>
+<p>&#160;</p>
+<p>&#160;</p>
+<div style="width: 100%; position: relative;" id="footer">
+	<p style="text-align: center;"><span style="line-height: 115%; mso-ascii-theme-font: minor-latin; 
+										 mso-fareast-font-family: Calibri; 
+										 mso-fareast-theme-font: minor-latin; 
+										 mso-hansi-theme-font: minor-latin; 
+										 mso-bidi-font-family: 'Times New Roman'; 
+										 mso-bidi-theme-font: minor-bidi; 
+										 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; 
+										 mso-bidi-language: AR-SA; font-family: Arial, sans-serif; 
+										 font-size: 10pt;">©</span><span 
+	 style="color: rgb(34, 34, 34); line-height: normal; orphans: auto; 
+	 widows: 1; -webkit-text-stroke-width: 0px; display: inline	 ! important ; 
+	 float: none; background-color: #ffffff; font-family: Arial, sans-serif; 
+	 font-size: 10pt;"> 2016 Advanced Micro Devices, Inc. All rights reserved. 
+	 AMD, the AMD logo, Radeon ProRender, and FirePro are trademarks or 
+	 registered trademarks of Advanced Micro Devices, Inc. Other names 
+	 are used for identification purposes only and may be trademarks of 
+	 the respective owners.</span><span style="font-size: 11.0pt; line-height: 115%; 
+										 font-family: Calibri, sans-serif; 
+										 mso-ascii-theme-font: minor-latin; 
+										 mso-fareast-font-family: Calibri; 
+										 mso-fareast-theme-font: minor-latin; 
+										 mso-hansi-theme-font: minor-latin; 
+										 mso-bidi-font-family: 'Times New Roman'; 
+										 mso-bidi-theme-font: minor-bidi; 
+										 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; 
+										 mso-bidi-language: AR-SA;"> </span>&#160;</p>
+</div>
+</body>
+</html>

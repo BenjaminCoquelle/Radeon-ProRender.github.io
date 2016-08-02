@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Choosing FireRender as Your Renderer</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "1.0_5";
+</script>
+ <meta name="topic-breadcrumbs" content="Chapter 1: Introduction" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<div style="width: 100%; position: relative;" id="header">
+	<p style="text-align: right; mso-bidi-font-size: 11.0pt; line-height: 107%; 
+		 mso-bidi-font-weight: normal; font-size: 12pt; margin-top: 0pt;"><b><span 
+	 lang="EN-US" xml:lang="EN-US">­­</span><span style="line-height: 115%; 
+													 font-family: Arial, sans-serif; 
+													 mso-fareast-font-family: Calibri; 
+													 mso-fareast-theme-font: minor-latin; 
+													 color: #333333; background: #ffffff; 
+													 mso-ansi-language: EN-AU; 
+													 mso-fareast-language: EN-US; 
+													 mso-bidi-language: AR-SA;">Radeon 
+	 ProRender</span></b><b><span lang="EN-US" xml:lang="EN-US"> for Autodesk® 
+	 3ds Max®</span></b></p>
+</div>
+
+
+<h1>Choosing Radeon ProRender as Your Renderer</h1>
+<h2><a name="Render_Setup">Render Setup</a></h2>
+<p>Once 3ds Max® has loaded close the Welcome Screen if 3ds Max® shows it. 
+ &#160;This will leave you with a new scene.</p>
+<p>Select the <span style="font-weight: bold;">Render Setup</span> button, 
+ <span style="font-weight: bold;">Rendering -&gt; Render Setup...</span> 
+ from the menu or press the <span style="font-weight: bold;">F10</span> 
+ key.</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/3dsmax_rendersetup_button.jpg" alt="" style=" border:none; margin-top:20px; margin-left:20px; margin-right:20px; width:100%; max-width:187px;" border="0" /></p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/3dsmax_rendering_rendersetup.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:0px; margin-bottom:20px; width:100%; max-width:430px;" border="1" /></p>
+<p>This will display the Render Setup dialog where you can set the default 
+ render you want to use for production or final rendering of your scene. 
+ &#160;You will see that the Render is set to the <span style="font-weight: bold;">Default 
+ Scanline Renderer</span> or one of the other renders if you have changed 
+ this setting before. &#160;Ensure the <span style="font-weight: bold;">Target</span> 
+ drop down is set to <span style="font-weight: bold;">Production Rendering 
+ Mode</span> and then using the <span style="font-weight: bold;">Render</span> 
+ drop down select <span style="font-weight: bold;">Radeon ProRender.</span></p>
+<p>&#160;</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/image002.jpg" alt="rendersetup.jpg" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:360px;" border="1" /><img src="Radeon_ProRender_3dsMax_Images/3dsmax_rendersetup_setting_change.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:370px;" border="1" /></p>
+<p>Once you have done this you will see the settings tabs change to include 
+ <span style="font-weight: bold;">Radeon ProRender Settings</span>. &#160;If 
+ you access the <span style="font-weight: bold;">plug-in Manager</span> 
+ again<span style="font-weight: bold;">&#160;</span>under <span style="font-weight: bold;">Customize 
+ -&gt; Plug-in Manager,</span> as illustrated in the previous chapter, 
+ you will see the plug-in status has changed to &quot;loaded&quot;.</p>
+<h2><a name="Setup_Lighting">Setup Lighting</a></h2>
+<p>Without setting up the lighting properly to take advantage of Radeon 
+ ProRender, any production renders will not display the advanced features 
+ that AMD Radeon ProRender provides. &#160;</p>
+<p class="MsoNormal">For lighting you can use a variety of techniques including 
+ using:</p>
+<ol style="list-style: decimal;">
+	<li><p class="MsoNormal">Emissive (self illuminated) materials and 
+	 geometry</p></li>
+	<li><p class="MsoNormal">An environment map with a High Definition 
+	 Range Image (HDRI) file</p></li>
+	<li><p class="MsoNormal">3ds Max® photometric lights</p></li>
+	<li><p class="MsoNormal">3ds Max® IES lights &lt;coming soon&gt;</p></li>
+	<li><p class="MsoNormal">Physical sun and sky system</p></li>
+	<li><p class="MsoNormal">3ds Max® standard lights can also be used however 
+	 these are less ideal as they do not obey physical properties (for 
+	 example they have no decay and their multiplier is invalid in a physical 
+	 environment). &#160;Thus renderings may even create fireflies (colored 
+	 spots)</p></li>
+</ol>
+<p class="MsoNormal">For a the best rendering outcomes we recommend you 
+ use above lighting options.</p>
+<p>To set up the lighting in our example we'll assign an environment map 
+ using a High Definition Range Image (HDRI) file. &#160;If we set up a 
+ plane with a teapot on top and produce a render we can see that the result 
+ is a very standard render with sharp shadows and highlights.</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/3dsmax_teapotstandard_render.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:650px;" border="1" /> &#160;</p>
+<p>To assign and HDRI environment map, open the <span style="font-weight: bold;">Environments 
+ and Effects</span> dialog by either selecting <span style="font-weight: bold;">Rendering 
+ -&gt; Environment</span> from the menu or by pressing the <span style="font-weight: bold;">8</span> 
+ key.</p>
+<p>There are a number of sample scenes provided along with the Radeon ProRender 
+ plug-in. &#160;A description of the download location can be found on 
+ the download page mentioned in the <a href="Install,_License,_and_Run_FireRender_for_3dsmax.htm">Install, 
+ License, and Run Radeon ProRender for 3dsmax</a> chapter and by following 
+ this link <a href="https://github.com/AMDFirePro/FireRender3DSMaxPlugin/releases">Radeon 
+ ProRender Releases</a>. &#160;Here we will be using a HDRI file located 
+ within the <span style="font-weight: bold;">Test_Scene_Objects-2016-04-18.zip</span> 
+ package. </p>
+<p>Within the package is an <span style="font-weight: bold;">Objects_Demo</span> 
+ directory containing the <span style="font-weight: bold;">Studio-Chrome-v2.hdr 
+ </span>HDRI file. &#160;</p>
+<p>Assign a HDRI image file to the <span style="font-weight: bold;">Environment 
+ Map </span>and tick<span style="font-weight: bold;"> Use Map. </span></p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/image004.jpg" alt="hdrisetup.jpg" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:310px;" border="1" /></p>
+<p>When you press the <span style="font-weight: bold;">Environment Map</span> 
+ button you will be presented with the <span style="font-weight: bold;">Material/Map 
+ Browser</span>. &#160;Select the Bitmap and then locate the <span style="font-weight: bold;">Studio-Chrome-v2.hdr 
+ </span>file<span style="font-weight: bold;"> </span>under <span style="font-weight: bold;">Objects_Demo</span> 
+ directory wherever you have saved it after extracting it from the .zip 
+ sample package.</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/3dsmax_map_browser.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:473px;" border="1" /></p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/3dsmax_select_hdri_file.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:696px;" border="1" /></p>
+<p>If you have built a test scene like the teapot above, perform a test 
+ render by either selecting <span style="font-weight: bold;">Rendering 
+ -&gt; Render</span> from the menu, pressing the <span style="font-weight: bold;">Render 
+ Production</span> button or hitting <span style="font-weight: bold;">Shift+Q</span> 
+ and have a look at the results. &#160;</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/3dsmax_render_production.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:190px;" border="1" /></p>
+<p>You can see that the HDRI lighting has been applied to the scene resulting 
+ in multiple shadows and smoother highlights as Radeon ProRender performs 
+ the ray tracing. </p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/3dsmax_teapot_render_firerender.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:649px;" border="1" /></p>
+<p>The render will also display a <span style="font-weight: bold;">Rendering</span> 
+ status window. &#160;The first render you perform may take a while to 
+ initialize however successive renders will not require the initiation 
+ so will display a lot quicker. &#160;The Rendering status also shows you 
+ the number of passes executed by Radeon ProRender. &#160;With increasing 
+ passes the render will improve in detail and quality. &#160;You can <span 
+	 style="font-weight: bold;">Pause</span> and/or <span style="font-weight: bold;">Cancel</span> 
+ the render at any time.</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/3dsmax_firerender_rendering.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:370px;" border="1" /></p>
+<p>The sample files also contain a <span style="font-weight: bold;">Objects_Demo.max</span> 
+ scene file that includes this HDRI image as an <span style="font-weight: bold;">Environment 
+ Map </span>as well as additional physical lighting on a transparent glass. 
+ &#160;This shows you what is possible once we apply some materials. &#160;It 
+ would be worth while to load this scene, test out a render, and see how 
+ the HDRI image and physical lighting can affect the result.</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/3dsmax_glass_render.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:723px;" border="1" /></p>
+<h2>Assign Basic Materials</h2>
+<p>To assign basic materials to Objects or Models in a scene open the <span 
+	 style="font-weight: bold;">Material Editor</span> either by using 
+ the <span style="font-weight: bold;">Rendering -&gt; Material Editor -&gt; 
+ Slate Material Editor</span> menu option, clicking the <span style="font-weight: bold;">Material 
+ Editor</span> button or hitting the <span style="font-weight: bold;">M</span> 
+ key.</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/image006.jpg" alt="ME.jpg" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:228px;" border="1" /></p>
+<p>You will notice that a number of Radeon ProRender materials have been 
+ added for your use during the installation. &#160;These are discussed 
+ in more detail in the following <a href="Material_Library.htm">Material 
+ Library</a> topic.</p>
+<p>After the Material Editor opens, navigate to&#160;&#160;the Radeon ProRender 
+ menu set on the left hand side of the <span style="font-weight: bold;">Material 
+ Editor.</span> &#160;Click and drag the <span style="font-weight: bold;">Radeon 
+ ProRender Reflective Material</span> into the <span style="font-weight: bold;">Material 
+ Editors</span> workspace.</p>
+<p>&#160;</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/3dsmax_material_editor_move.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:887px;" border="1" /></p>
+<p>&#160;</p>
+<p>Select your object or models in the scene then right click over <span 
+	 style="font-weight: bold;">Radeon ProRender Reflection Material </span>in 
+ material Editor workspace and select <u style="text-decoration: none; "><span 
+	 style="font-weight: bold;">Assign Material</span> to Selection.</u></p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/3dsmax_assign_material.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:900px;" border="1" /></p>
+<p>Now we are ready to render another test shot, this time with materials 
+ assigned to your selected model.</p>
+<h2>Production Render</h2>
+<p>To perform a Production Render either select <span style="font-weight: bold;">Rendering 
+ -&gt; Render</span> from the menu, press the <span style="font-weight: bold;">Render 
+ Production</span> button or hit <span style="font-weight: bold;">Shift+Q</span> 
+ and have a look at the results. &#160;</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/3dsmax_render_production.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:190px;" border="1" /></p>
+<p>Radeon ProRender will start rendering through your selected camera.</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/3dsmax_teapot_reflective.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:551px;" border="1" /></p>
+<h2>Render Settings and Fine Tuning</h2>
+<p>Open the Render Setup,navigate to Radeon ProRender Settings Tab. &#160;Set 
+ the pass limit to 100. This will limit the amount of time it will take 
+ to render the frame, but this trades off with quality of the render.</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/image015.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:316px;" border="1" /></p>
+<p>Start another render. &#160;This time the progress bar starts to count 
+ the amount of passes. &#160;It will stop when it gets to 100 passes.</p>
+<p>&#160;</p>
+<div style="width: 100%; position: relative;" id="footer">
+	<p style="text-align: center; margin-top: 4pt; margin-bottom: 4pt;"><span 
+	 style="line-height: 115%; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Calibri; 
+	 mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; 
+	 mso-bidi-font-family: 'Times New Roman'; mso-bidi-theme-font: minor-bidi; 
+	 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; mso-bidi-language: AR-SA; 
+	 font-family: Arial, sans-serif; font-size: 10pt;">©</span><span style="color: rgb(34, 34, 34); 
+	 line-height: normal; orphans: auto; widows: 1; -webkit-text-stroke-width: 0px; 
+	 display: inline	 ! important ; float: none; background-color: #ffffff; 
+	 font-family: Arial, sans-serif; font-size: 10pt;"> 2016 Advanced Micro 
+	 Devices, Inc. All rights reserved. AMD, the AMD logo, Radeon ProRender, 
+	 and FirePro are trademarks or registered trademarks of Advanced Micro 
+	 Devices, Inc. Other names are used for identification purposes only 
+	 and may be trademarks of the respective owners.</span> </p>
+</div>
+</body>
+</html>

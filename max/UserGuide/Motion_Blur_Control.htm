@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Motion Blur Control</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "5.0_3";
+</script>
+ <meta name="topic-breadcrumbs" content="Chapter 5: Working with Cameras" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<div style="width: 100%; position: relative;" id="header">
+	<p style="text-align: right; mso-bidi-font-size: 11.0pt; line-height: 107%; 
+		 mso-bidi-font-weight: normal; font-size: 12pt; margin-top: 0pt;"><b><span 
+	 style="line-height: 115%; font-family: Arial, sans-serif; mso-fareast-font-family: Calibri; 
+	 mso-fareast-theme-font: minor-latin; color: #333333; background: #ffffff; 
+	 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;">Radeon 
+	 ProRender</span></b><b><span lang="EN-US" xml:lang="EN-US"> for Autodesk® 
+	 3ds Max®</span></b></p>
+</div>
+
+
+<h1>Motion Blur Control</h1>
+<p>Motion Blur applies an image motion blur to your rendered scene by blurring 
+ moving objects or the entire scene. Motion blur can enhance the realism 
+ of a rendered animation by simulating the way a real-world camera works. 
+ A camera has a shutter speed, and if significant movement of objects in 
+ the scene, or of the camera itself, occurs during the time the shutter 
+ is open, the image on film is blurred.</p>
+<p>To enable motion blur select the <span style="font-weight: bold;">Motion 
+ Blur</span> enable check box in the <span style="font-weight: bold;">AMD 
+ Radeon ProRender</span> settings.</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/motion_blur_control.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:374px;" border="1" /></p>
+<p>Below we have created a simple animation of the car tutorial. &#160;We 
+ moved it back against the wall for frame 0 and set key frame to automatic. 
+ &#160;On the time line we moved forward to frame 5 and moved the car back 
+ to it's original position in the shot. If you use ActiveShade to render 
+ a frame between 0 and 5 you will see the effect of motion blur.</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/motion_blur_example.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:1122px;" border="1" /></p>
+<p class="MsoNormal"><span style="font-weight: bold;">Camera Exposure.</span> 
+ &#160;Specifies how long the &quot;virtual shutter&quot; is open. When 
+ this is set to 1.0, the virtual shutter is open for the entire duration 
+ between one frame and the next. The higher the value, the greater the 
+ motion blur effect. <span style="mso-spacerun: yes;">&#160;</span>Default=1.0.</p>
+<p><span style="font-weight: bold;">Sale.</span> &#160;Is a linear multiplier 
+ for objects motion characteristics. &#160;Increasing it will make the 
+ effect more burry. &#160;We calculate linear and angular velocity of objects 
+ based on their animation (relative to camera) over time and pass those 
+ two velocities multiplied by the scale. &#160;</p>
+<p>&#160;</p>
+<p>&#160;</p>
+<div style="width: 100%; position: relative;" id="footer">
+	<p style="text-align: center;"><span style="line-height: 115%; mso-ascii-theme-font: minor-latin; 
+										 mso-fareast-font-family: Calibri; 
+										 mso-fareast-theme-font: minor-latin; 
+										 mso-hansi-theme-font: minor-latin; 
+										 mso-bidi-font-family: 'Times New Roman'; 
+										 mso-bidi-theme-font: minor-bidi; 
+										 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; 
+										 mso-bidi-language: AR-SA; font-family: Arial, sans-serif; 
+										 font-size: 10pt;">©</span><span 
+	 style="color: rgb(34, 34, 34); line-height: normal; orphans: auto; 
+	 widows: 1; -webkit-text-stroke-width: 0px; display: inline	 ! important ; 
+	 float: none; background-color: #ffffff; font-family: Arial, sans-serif; 
+	 font-size: 10pt;"> 2016 Advanced Micro Devices, Inc. All rights reserved. 
+	 AMD, the AMD logo, Radeon ProRender, and FirePro are trademarks or 
+	 registered trademarks of Advanced Micro Devices, Inc. Other names 
+	 are used for identification purposes only and may be trademarks of 
+	 the respective owners.</span><span style="font-size: 11.0pt; line-height: 115%; 
+										 font-family: Calibri, sans-serif; 
+										 mso-ascii-theme-font: minor-latin; 
+										 mso-fareast-font-family: Calibri; 
+										 mso-fareast-theme-font: minor-latin; 
+										 mso-hansi-theme-font: minor-latin; 
+										 mso-bidi-font-family: 'Times New Roman'; 
+										 mso-bidi-theme-font: minor-bidi; 
+										 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; 
+										 mso-bidi-language: AR-SA;"> </span>&#160;</p>
+</div>
+</body>
+</html>

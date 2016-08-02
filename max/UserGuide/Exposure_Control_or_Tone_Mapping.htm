@@ -1,0 +1,784 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 2015" />
+<title>Exposure Control or Tone Mapping</title>
+<link rel="StyleSheet" href="default.css" type="text/css" />
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+p.WebHelpNavBar { text-align:right; }
+-->
+</style>
+
+<script type="text/javascript" src="template/scripts/rh.min.js"></script>
+<script type="text/javascript" src="template/scripts/common.min.js"></script>
+<script type="text/javascript" src="template/scripts/topic.min.js"></script>
+<script type="text/javascript" src="template/scripts/constants.js"></script>
+<script type="text/javascript" src="template/scripts/utils.js"></script>
+<script type="text/javascript" src="template/scripts/mhutils.js"></script>
+<script type="text/javascript" src="template/scripts/mhlang.js"></script>
+<script type="text/javascript" src="template/scripts/mhver.js"></script>
+<script type="text/javascript" src="template/scripts/settings.js"></script>
+<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
+<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
+<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
+<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
+<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
+ <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
+<script type="text/javascript" >
+gRootRelPath = ".";
+gCommonRootRelPath = ".";
+gTopicId = "5.0_2";
+</script>
+ <meta name="topic-breadcrumbs" content="Chapter 5: Working with Cameras" />
+</head>
+
+<body>
+<script type="text/javascript" src="./ehlpdhtm.js"></script>
+
+<div style="width: 100%; position: relative;" id="header">
+	<p style="text-align: right; mso-bidi-font-size: 11.0pt; line-height: 107%; 
+		 mso-bidi-font-weight: normal; font-size: 12pt; margin-top: 0pt;"><b><span 
+	 style="line-height: 115%; font-family: Arial, sans-serif; mso-fareast-font-family: Calibri; 
+	 mso-fareast-theme-font: minor-latin; color: #333333; background: #ffffff; 
+	 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;">Radeon 
+	 ProRender</span></b><b><span lang="EN-US" xml:lang="EN-US"> for Autodesk® 
+	 3ds Max®</span></b></p>
+</div>
+
+
+<h1>Exposure Controls or Tone Mapping</h1>
+<h2>Assessing Exposure Controls</h2>
+<p>One of the advantages of Radeon ProRender is that the exposure controls or 
+ tone mapping have now been integrated into the standard 3ds Max® workflow 
+ and are not a separate function. &#160;This means that artists do not 
+ have to learn any new processes or techniques for adding tone mapping 
+ effects. &#160;They can just use the approach they are familiar with and 
+ the results will be rendered with Radeon ProRender.</p>
+<p>Exposure controls are plug-in components for managing the post processing 
+ rendering that simulates the effects of setting the aperture, shutter 
+ speed and film speed etc of a camera and adjust the output levels and 
+ color range of a rendering, as if you were adjusting film exposure. They 
+ can be found under:</p>
+<ul class="ul" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__UL_64BB98DFAB85403A88BEA578025E325D">
+	<li class="li" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-129D5C64-2740-444F-838A-C16A37B950D2"><p><span 
+	 class="ph uicontrol" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-4043943F-8059-4A6B-9202-A911B9718741">Standard 
+	 menu: </span><span class="ph uicontrol" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-4043943F-8059-4A6B-9202-A911B9718741" 
+						 style="font-weight: bold;">Rendering menu</span><span 
+	 class="ph menucascade" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-CCB7A582-DBE7-4FF9-92B2-0D409FA72F08" 
+	 style="font-weight: bold;"> &gt; </span><span class="ph uicontrol" 
+													 id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-DFEAE51C-9A45-4DD4-864A-83C92B056853" 
+													 style="font-weight: bold;">Environment</span><span 
+	 class="ph menucascade" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-CCB7A582-DBE7-4FF9-92B2-0D409FA72F08" 
+	 style="font-weight: bold;"> &gt; </span><span class="ph uicontrol" 
+													 id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-8E59B845-1BF8-4799-901F-40D314E57F3E" 
+													 style="font-weight: bold;">Environment 
+	 and Effects dialog</span><span class="ph menucascade" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-CCB7A582-DBE7-4FF9-92B2-0D409FA72F08" 
+									 style="font-weight: bold;"> &gt; </span><span 
+	 class="ph uicontrol" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-B76C7EC7-3290-46B4-82BD-CE19D66B03D4" 
+	 style="font-weight: bold;">Environment panel</span><span class="ph menucascade" 
+	 id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-CCB7A582-DBE7-4FF9-92B2-0D409FA72F08" 
+	 style="font-weight: bold;"> &gt; </span><span class="ph uicontrol" 
+													 id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-4492EE86-AE24-4B85-A600-E1D635221DAC" 
+													 style="font-weight: bold;">Exposure 
+	 Control</span><span class="ph uicontrol" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-4492EE86-AE24-4B85-A600-E1D635221DAC"> 
+	 rollout</span> </p></li>
+	<li class="li" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__WS1A9193826455F5FFBA679E112C9EF5A71-2BB1"><p><span 
+	 class="ph uicontrol" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-C67D716C-0F6E-4266-93A2-DA4DCADD01B2">Enhanced 
+	 menu: </span><span class="ph uicontrol" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-C67D716C-0F6E-4266-93A2-DA4DCADD01B2" 
+						 style="font-weight: bold;">Rendering menu</span><span 
+	 class="ph menucascade" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-624AEA65-ECB9-4055-921A-1A550D1AA394" 
+	 style="font-weight: bold;"> &gt; </span><span class="ph uicontrol" 
+													 id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-C7008A73-F539-47D6-8129-F97DD43F4594" 
+													 style="font-weight: bold;">Environment 
+	 and Effects</span><span class="ph menucascade" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-624AEA65-ECB9-4055-921A-1A550D1AA394" 
+							 style="font-weight: bold;"> &gt; </span><span 
+	 class="ph uicontrol" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-C13B904B-FB00-4C61-9A68-E09159B000A6" 
+	 style="font-weight: bold;">Environment and Exposure Settings</span><span 
+	 class="ph menucascade" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-624AEA65-ECB9-4055-921A-1A550D1AA394" 
+	 style="font-weight: bold;"> &gt; </span><span class="ph uicontrol" 
+													 id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-E02FC815-AA7F-48F9-8EC1-8463DDE2F346" 
+													 style="font-weight: bold;">Environment 
+	 and Effects dialog</span><span class="ph menucascade" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-624AEA65-ECB9-4055-921A-1A550D1AA394" 
+									 style="font-weight: bold;"> &gt; </span><span 
+	 class="ph uicontrol" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-CB83AF68-866C-40EA-8461-4CCD2EE03C25" 
+	 style="font-weight: bold;">Environment panel</span><span class="ph menucascade" 
+	 id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-624AEA65-ECB9-4055-921A-1A550D1AA394" 
+	 style="font-weight: bold;"> &gt; </span><span class="ph uicontrol" 
+													 id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-A8335370-ECC9-48AC-9C5D-B92FDDEF3076" 
+													 style="font-weight: bold;">Exposure 
+	 Control</span><span class="ph uicontrol" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-A8335370-ECC9-48AC-9C5D-B92FDDEF3076"> 
+	 rollout</span> </p></li>
+</ul>
+<p id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__WS1A9193826455F5FFBA679E112C9EF5A71-2AB3">The 
+ exposure control process is known as <em class="ph i" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-CD8898EE-C6C6-4352-91AD-C49D8548B576">tone 
+ mapping</em>. These controls are especially useful for renderings that 
+ use radiosity or that render high-dynamic-range imagery &#160;(HDRI). 
+ </p>
+<p>To access the exposure controls dialog either go to the main menu and 
+ select <span class="ph uicontrol" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-4043943F-8059-4A6B-9202-A911B97187411" 
+				 style="font-weight: bold;">Rendering menu</span><span 
+	 class="ph menucascade" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-CCB7A582-DBE7-4FF9-92B2-0D409FA72F081" 
+	 style="font-weight: bold;"> &gt; </span><span class="ph uicontrol" 
+													 id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-DFEAE51C-9A45-4DD4-864A-83C92B0568531" 
+													 style="font-weight: bold;">Environment 
+ </span><span class="ph uicontrol" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-DFEAE51C-9A45-4DD4-864A-83C92B0568531">or 
+ press </span><span class="ph uicontrol" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-DFEAE51C-9A45-4DD4-864A-83C92B0568531" 
+					 style="font-weight: bold;">8. &#160;</span><span class="ph uicontrol" 
+	 id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-DFEAE51C-9A45-4DD4-864A-83C92B0568531">The 
+ </span><span class="ph uicontrol" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-DFEAE51C-9A45-4DD4-864A-83C92B0568531" 
+				 style="font-weight: bold;">Exposure Controls</span><span 
+	 class="ph uicontrol" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-DFEAE51C-9A45-4DD4-864A-83C92B0568531"> 
+ are under the</span><span class="ph uicontrol" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-DFEAE51C-9A45-4DD4-864A-83C92B0568531" 
+							 style="font-weight: bold;"> Environment </span><span 
+	 class="ph uicontrol" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-DFEAE51C-9A45-4DD4-864A-83C92B0568531">tab 
+ and are defaulted to the </span><span class="ph uicontrol" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-DFEAE51C-9A45-4DD4-864A-83C92B0568531" 
+										 style="font-weight: bold;">Physical 
+ Camera Exposure Control</span><span class="ph uicontrol" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__GUID-DFEAE51C-9A45-4DD4-864A-83C92B0568531"> 
+ setting.</span></p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/tone_mapping_environment.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:311px;" border="1" /> &#160;<img src="Radeon_ProRender_3dsMax_Images/tone_mapping_env_dialog.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:304px;" border="1" /></p>
+<h2>Setting Exposure Controls</h2>
+<p>The <span style="font-weight: bold;">Exposure Control</span> panel has 
+ a drop down that allows you to select different image post processing 
+ algorithms:</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/exposure_control.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:327px;" border="1" /></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-weight: bold;">Automatic Exposure Control</span>. 
+	 Samples the rendered image and builds a histogram to give good color 
+	 separation across the entire dynamic range of the rendering. It can 
+	 enhance some lighting effects that would otherwise be too dim to see.</p></li>
+	<li><p><span style="font-weight: bold;">Linear Exposure Control.</span> 
+	 &#160;Samples the rendered image and uses the average brightness of 
+	 the scene to map physical values to RGB values. Linear Exposure Control 
+	 is best used for scenes with a fairly low dynamic range.</p></li>
+	<li><p><span style="font-weight: bold;">Logarithmic Exposure Control.</span> 
+	 &#160;Uses brightness, contrast, and whether the scene is outdoors 
+	 in daylight to map physical values to RGB values. You can use it with 
+	 either the default scanline renderer or the mental ray renderer. Logarithmic 
+	 Exposure Control is best for scenes with a very high dynamic range.</p></li>
+	<li><p><span style="font-weight: bold;">mr Photographic Exposure Control. 
+	 </span>Lets you modify rendered output with camera-like controls: 
+	 either a general exposure value or specific shutter speed, aperture, 
+	 and film speed settings. It also gives you image-control settings 
+	 with values for highlights, midtones, and shadows. It’s intended for 
+	 high-dynamic-range scenes.</p></li>
+	<li><p><span style="font-weight: bold;">Physical Camera Exposure Control.</span> 
+	 Sets exposure for Physical Cameras, using an Exposure Value and a 
+	 color-response curve.</p></li>
+	<li><p><span style="font-weight: bold;">Pseudo Color Exposure Control.</span> 
+	 Is actually a lighting analysis tool that provides you with an intuitive 
+	 way of visualizing and evaluating the lighting levels in your scenes. 
+	 It maps luminance or illuminance values to pseudo colors that show 
+	 the brightness of the values being converted. From darkest to brightest, 
+	 the rendering shows blue, cyan, green, yellow, orange, and red. (Alternatively, 
+	 you can choose a grayscale where the brightest values are white, and 
+	 the darkest are black.) The rendering includes the colored or grayscale 
+	 spectrum bar as a legend for the image.</p></li>
+</ul>
+<p><span style="font-family: Arial, sans-serif; font-size: 12pt;">T</span>ips:</p>
+<ul class="ul" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__WS1A9193826455F5FFBA679E112A6A19004E881">
+	<li class="li" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__WS73099CC142F487551FACE55114134B88B11C6"><p>If 
+	 the primary lighting from your scene comes from standard lights (rather 
+	 than photometric lights), use the Logarithmic exposure control and 
+	 turn on Affect Indirect Only. </p></li>
+	<li class="li" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__WS73099CC142F487551FACE55114134B88B11C7"><p>Use 
+	 Automatic exposure control for rendering still images. This method 
+	 is also useful for first-draft renderings. </p></li>
+	<li class="li" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__WS73099CC142F487551FACE55114134B88B11C8"><p>Use 
+	 Logarithmic or one of the advanced exposure control for animations 
+	 with a moving camera. Automatic and Linear exposure control with a 
+	 moving camera can cause excessive flickering. </p></li>
+	<li class="li" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__WS73099CC142F487551FACE55114134B88B11C9"><p>For 
+	 rendering high-dynamic-range images with Radeon ProRender, use the mr Photographic 
+	 exposure control. </p></li>
+	<li class="li" id="GUID-E1A6D466-CABB-4C8A-97A9-0C191C69F9BD__WS73099CC142F487551FACE55114134B88B11CA1"><p>For 
+	 outdoor scenes that use the Daylight system, turn on the Exterior 
+	 toggle to prevent overexposure. </p></li>
+</ul>
+<h3>Automatic Exposure Control</h3>
+<p>Automatic Exposure Control samples the rendered image and builds a histogram 
+ to give good color separation across the entire dynamic range of the rendering. 
+ It can enhance some lighting effects that would otherwise be too dim to 
+ see. </p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/exposure-control_automatic.jpg" alt="" style=" margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; border-left-style:Solid; border-left-width:1px; border-right-style:Solid; border-right-width:1px; border-top-style:Solid; border-top-width:1px; border-bottom-style:Solid; border-bottom-width:1px; width:100%; max-width:324px;" border="1" /></p>
+<p>Brightness:</p>
+<ul style="list-style: disc;">
+	<li><p id="GUID-BBD919B2-73E2-4137-A9B7-735388DFBA81__WS1A9193826455F5FF1DBC298511635BEA87543CB">Adjusts 
+	 the brightness of the converted colors.</p></li>
+</ul>
+<p>Contrast:</p>
+<ul style="list-style: disc;">
+	<li><p id="GUID-BBD919B2-73E2-4137-A9B7-735388DFBA81__WS1A9193826455F5FF1DBC298511635BEA87543CC">Adjusts 
+	 the contrast of the converted colors. </p></li>
+</ul>
+<p>Exposure Value: </p>
+<ul style="list-style: disc;">
+	<li><p id="GUID-BBD919B2-73E2-4137-A9B7-735388DFBA81__WS1A9193826455F5FF1DBC298511635BEA87543CD">Adjusts 
+	 the overall brightness of the rendering. </p></li>
+	<li><p>Negative values make the image darker, and positive values make 
+	 it brighter.</p></li>
+</ul>
+<p>Physical Scale: </p>
+<ul style="list-style: disc;">
+	<li><p id="GUID-BBD919B2-73E2-4137-A9B7-735388DFBA81__WS1A9193826455F5FF1DBC298511635BEA87543CE">Sets 
+	 a physical scale for exposure control to use with lights that are 
+	 not physically based. The result is an adjustment of the rendering 
+	 that approximates the eye's response to the scene. </p></li>
+	<li><p id="GUID-BBD919B2-73E2-4137-A9B7-735388DFBA81__WS1A9193826455F5FFBA679E112C9EF5A71-2A9F">Each 
+	 standard light's Multiplier is multiplied by the Physical Scale value 
+	 to give a light intensity value in candelas. Physical Scale is also 
+	 factored into reflections, refractions, and self-illumination. </p></li>
+	<li><p id="GUID-BBD919B2-73E2-4137-A9B7-735388DFBA81__WS1A9193826455F5FFBA679E112C9EF5A71-2AA6">Tip: 
+	 You need to set the Physical Scale when you use ray-tracing with self 
+	 illumination. Set this value to the equivalent of the brightest light 
+	 source in the scene. This will set the appropriate conversion scale 
+	 for reflections, self-illumination, and all other non-physically based 
+	 elements a material offers. In some cases, an object might reflect 
+	 or emit more light than the brightest light object in the scene; in 
+	 this case, use the object's Luminance value as the Physical Scale.</p></li>
+	<li><p>Photometric lights are unaffected by the Physical Scale value.</p></li>
+</ul>
+<p>Color correction checkbox and color swatch:</p>
+<ul style="list-style: disc;">
+	<li><p>When the checkbox is turned on, color correction shifts all 
+	 colors so the color displayed in the color swatch appears as white.</p></li>
+	<li><p>Clicking the color swatch displays a Color Selector so you can 
+	 choose the color to adapt to.</p></li>
+	<li><p>You can use this control to simulate how the eye adjusts to 
+	 lighting. For example, even when the light in a room has a yellow 
+	 hue from an incandescent light bulb, we will continue to perceive 
+	 objects that we know to be white, such as printed pages, as white.</p></li>
+	<li><p>Tip: For the best results, use a very pale color correction 
+	 color, such as a pale blue or pale yellow.</p></li>
+</ul>
+<p>Desaturate Low Levels:</p>
+<ul style="list-style: disc;">
+	<li><p>When on, renders dimly lit colors as if the light were too dim 
+	 for the eye to distinguish between colors. When on, renders even dimly 
+	 lit colors. Default=off.</p></li>
+	<li><p>Desaturate Low Levels simulates the eye's response to dim lighting. 
+	 In dim lighting, the eye does not perceive colors and sees tones of 
+	 gray instead.</p></li>
+	<li><p>The effect of this setting is not apparent except at very low 
+	 light levels, below 5.62 footcandles (lumens per square foot). When 
+	 the illuminance is less than 0.00562 footcandles, the scene is completely 
+	 gray. </p></li>
+</ul>
+<h3>Linear Exposure Control </h3>
+<p>Linear Exposure Control samples the rendered image and uses the average 
+ brightness of the scene to map physical values to RGB values. Linear Exposure 
+ Control is best used for scenes with a fairly low dynamic range. </p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/exposure_control_linea.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:333px;" border="1" /></p>
+<p>The parameters are the same as for Automatic Exposure Control. </p>
+<h3>Logarithmic Exposure Control </h3>
+<p>Logarithmic Exposure Control uses brightness, contrast, and whether 
+ the scene is outdoors in daylight to map physical values to RGB values. 
+ You can use it with either the default scanline renderer or the mental 
+ ray renderer. Logarithmic Exposure Control is best for scenes with a very 
+ high dynamic range. </p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/env_control_log.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:328px;" border="1" /></p>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Brightness:</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Adjusts 
+	 the brightness of the converted colors.</span></p></li>
+</ul>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Contrast:</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Adjusts 
+	 the contrast of the converted colors.</span></p></li>
+</ul>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Mid 
+ Tones:</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Adjusts 
+	 the mid-tone values of the converted colors.</span></p></li>
+</ul>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Physical 
+ Scale:</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="line-height: 115%; font-family: Arial, sans-serif;">Provides 
+	 the same result as </span>Automatic Exposure Control. &#160;See Automatic 
+	 Exposure Control above for description.</p></li>
+</ul>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Color 
+ Correction checkbox and color swatch:</span></p>
+<ul style="list-style: disc;">
+	<li><p style="line-height: 115%; font-family: Arial, sans-serif;">Provides 
+	 the same result as Automatic Exposure Control. &#160;See Automatic 
+	 Exposure Control above for description.</p></li>
+</ul>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Desaturate 
+ Low Levels:</span></p>
+<ul style="list-style: disc;">
+	<li><p style="line-height: 115%; font-family: Arial, sans-serif;">Provides 
+	 the same result as Automatic Exposure Control. &#160;See Automatic 
+	 Exposure Control above for description.</p></li>
+</ul>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Affect 
+ Indirect Only:</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">When 
+	 on, Logarithmic Exposure control is applied only to areas of indirect 
+	 lighting.</span></p></li>
+	<li><p style="line-height: 115%; font-family: Arial, sans-serif;">Turn 
+	 on this toggle when the primary lighting for your scene comes from 
+	 standard lights rather than photometric lights. Radeon ProRender provides 
+	 the best results with photometric lights so standard lights should 
+	 not be used.</p></li>
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">In 
+	 general, you don’t need to turn on Affect Indirect Only when the primary 
+	 lighting for your scene comes from photometric lights.</span></p></li>
+</ul>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Exterior 
+ daylight</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">When 
+	 on, converts colors for an outdoor scene.</span></p></li>
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">The 
+	 exterior daylight setting compensates for the extreme intensity of 
+	 an IES sun light.</span></p></li>
+</ul>
+<h3>mr Photographic Exposure Control </h3>
+<p style="line-height: 115%; font-family: Arial, sans-serif;">The mr Photographic 
+ Exposure Control lets you modify rendered output with camera-like controls: 
+ either a general exposure value or specific shutter speed, aperture, and 
+ film speed settings. It also gives you image-control settings with values 
+ for highlights, midtones, and shadows. &#160;It is intended for high-dynamic-range 
+ scenes and ray tracing renderers like Radeon ProRender.</p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/env_control_mr.jpg" alt="" style=" margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; border-left-style:Solid; border-left-width:1px; border-right-style:Solid; border-right-width:1px; border-top-style:Solid; border-top-width:1px; border-bottom-style:Solid; border-bottom-width:1px; width:100%; max-width:325px;" border="1" /></p>
+<h4><b style="mso-bidi-font-weight: normal;"><span style="font-size: 12.0pt; 
+													 line-height: 115%; 
+													 font-family: Arial, sans-serif;">Exposure 
+ group</span></b></h4>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">This 
+ group comprises a drop-down list of exposure presets plus a choice of 
+ Exposure Value or Photographic Exposure and associated parameters. Choosing 
+ one method makes the other’s setting or settings unavailable, but they 
+ still change based on adjustments you make to the available method. For 
+ example, when Exposure Value is active, adjusting its value also changes 
+ the Photographic Exposure Shutter Speed setting.</span></p>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Preset 
+ drop-down list:</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Choose 
+	 from the available presets based on setting and lighting conditions. 
+	 The presets affect all of the remaining settings in this group.</span></p></li>
+</ul>
+<p>Exposure Value (EV):</p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Choose 
+	 this option to specify a single Exposure Value setting that corresponds 
+	 to a combination of the three Photographic Exposure values (see following). 
+	 Each increment or decrement in the EV value corresponds to halving 
+	 or doubling, respectively, the effective exposure, as expressed in 
+	 the resultant change in the Shutter Speed value. Thus, higher values 
+	 yield darker images, and lower values yield brighter images.</span></p></li>
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">For 
+	 example, as shown above, the combination of a shutter speed of 1/125 
+	 of a second, f/16, and ISO 100 results in an EV of 15. The same EV 
+	 results from halving the shutter speed to 1/250 second and doubling 
+	 the aperture size to f/11.</span></p></li>
+</ul>
+<p>Photographic Exposure:</p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Lets 
+	 you set the exposure using standard camera-oriented controls. These 
+	 controls affect exposure only: Shutter Speed has no effect on motion 
+	 blur; Aperture doesn’t influence depth of field; and Film Speed has 
+	 no effect on graininess.</span></p></li>
+</ul>
+<p>Shutter Speed:</p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">The 
+	 duration, in fractions of a second, that the “shutter” is open. The 
+	 higher this value, the greater the exposure.</span></p></li>
+</ul>
+<p>Aperture:</p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">&#160;The 
+	 size of the opening of the “camera iris,” expressed as a ratio. The 
+	 higher this value, the lower the exposure.</span></p></li>
+</ul>
+<p>Film Speed (ISO):</p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">The 
+	 sensitivity of the “camera film,” expressed as an index. The higher 
+	 this value, the greater the exposure.</span></p></li>
+</ul>
+<h4><b style="mso-bidi-font-weight: normal;"><span style="font-size: 12.0pt; 
+													 line-height: 115%; 
+													 font-family: Arial, sans-serif;">Image 
+ Control group</span></b></h4>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Use 
+ these controls to adjust the relative brightness or highlights, midtones, 
+ and shadows in the rendered image. The combination of these three settings 
+ is depicted in the graph on the right side of the rollout. Additional 
+ controls available here let you adjust color saturation, whitepoint, and 
+ vignetting.</span></p>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Highlights 
+ (Burn):</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Controls 
+	 the level of the brightest areas of the image. Higher values yield 
+	 brighter highlights, while lower values darken the highlights.</span></p></li>
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Darkened 
+	 (burnt-in) highlights</span></p></li>
+</ul>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Midtones:</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Controls 
+	 the level of the areas of the image whose brightness lies between 
+	 the highlights and the shadows. Higher values yield brighter midtones, 
+	 while lower values darken the midtones.</span></p></li>
+</ul>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Shadows:</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Controls 
+	 the level of the darkest areas of the image. Lower values yield lighter 
+	 shadows, while higher values darken the shadows.</span></p></li>
+</ul>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Color 
+ Saturation:</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Controls 
+	 the intensity of colors in the rendered image. Higher values result 
+	 in more intense colors.</span></p></li>
+</ul>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Whitepoint:</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Specifies 
+	 the main color temperature of the light sources. This is similar to 
+	 white balance controls on digital cameras. For daylighting, a value 
+	 of 6500 is recommended, for incandescent lighting, a value of 3700 
+	 is recommended.</span></p></li>
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">For 
+	 example, photographs taken indoors might be lit by incandescent lights, 
+	 which are relatively orange compared to daylight. Defining &quot;white&quot; 
+	 as daylight will give unacceptable results when attempting to color-correct 
+	 a photograph taken with incandescent lighting.</span></p></li>
+</ul>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Vignetting:</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Reduces 
+	 the image brightness in the image periphery compared to the image 
+	 center, resulting in a circular fully exposed area in the center, 
+	 with darker edges.</span></p></li>
+</ul>
+<h4><b style="mso-bidi-font-weight: normal;"><span style="font-size: 12.0pt; 
+													 line-height: 115%; 
+													 font-family: Arial, sans-serif;">Physical 
+ Scale group</span></b></h4>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Determines 
+ how 3ds Max® calculates pixel values when outputting HDR (high-dynamic-range) 
+ images. You can use the physical scale inherent in the scene, or set an 
+ arbitrary physical scale for non-physically-based lighting situations.</span></p>
+<p>Physical Units (cd/m2): </p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Outputs 
+	 physically correct HDR pixel values in candelas per square meter. 
+	 Use this option when lighting the scene with photometric light sources.</span></p></li>
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Tip: 
+	 When you use this option, the renderer interprets all non-physical 
+	 (standard) illumination values in units of cd/m 2 . If you use as 
+	 a background image or texture map an HDRI with pixels correctly calibrated 
+	 to cd/m 2 , it will be correct in the scene. However, if you attempt 
+	 to use a low-dynamic-range photo such as a JPEG photo, it will appear 
+	 too dark in the rendered output. (The renderer interprets a white 
+	 pixel in such an image as &quot;1 cd/m 2 &quot; by default, which 
+	 is darker than the deepest dungeon.) So you need to increase the output 
+	 of the image to match a useful cd/m 2 value. The sky can be around 
+	 3,000 cd/m 2 .</span></p></li>
+</ul>
+<p>Unitless:</p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Lets 
+	 you define how the renderer interprets the illumination from standard 
+	 lights, which are not physically based. Use the numeric setting to 
+	 set the apparent illumination from these lights and the output pixel 
+	 values based on the scene lighting. For example, with the default 
+	 Physical Scale of 1500, a standard omni light is treated by the renderer 
+	 as a photometric isotropic light of 1500 candelas. Physical Scale 
+	 is also factored into the environment map and self-illumination.</span></p></li>
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Note: 
+	 This value does not affect apparent illumination of the rendered scene 
+	 with photometric lights. However, it does affect the apparent illumination 
+	 cast by non-physical (standard) lights. For predictable results, illuminate 
+	 the scene only with photometric or standard lights (not a mix), and 
+	 use Physical Units or Unitless, respectively.</span></p></li>
+</ul>
+<h4><b style="mso-bidi-font-weight: normal;"><span style="font-size: 12.0pt; 
+													 line-height: 115%; 
+													 font-family: Arial, sans-serif;">Gamma/LUT 
+ Settings group</span></b></h4>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Gamma/LUT 
+ Settings:</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">This 
+	 group comprises text showing the status of the current Gamma/LUT settings, 
+	 and a Setup button that opens the Preference Settings dialog to the 
+	 Gamma and LUT panel so you can change the settings.</span></p></li>
+</ul>
+<h3><span class="shortdesc">Physical Camera Exposure Control</span></h3>
+<p><span class="shortdesc">Sets exposure for Physical Cameras, using an 
+ Exposure Value and a color-response curve.</span></p>
+<p style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/evn_control_phys.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:323px;" border="1" /></p>
+<h4><b style="mso-bidi-font-weight: normal;"><span style="font-size: 12.0pt; 
+													 line-height: 115%; 
+													 font-family: Arial, sans-serif;">Exposure 
+ group</span></b></h4>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Use 
+ Per-Camera Exposure (The default.) Controls on each camera's Exposure 
+ rollout can adjust the effect of the exposure control.</span></p>
+<p style="line-height: 115%; font-family: Arial, sans-serif;">Ignore Per-Camera 
+ Exposure (Use Global):</p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Controls 
+	 on each camera's Exposure rollout are ignored, and the exposure control 
+	 settings affect all Physical Camera renderings.</span></p></li>
+</ul>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Exposure 
+ for Non-Physical Cameras:</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Sets 
+	 the Exposure Value for legacy cameras.</span></p></li>
+</ul>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">EV 
+ Compensation for Physical Cameras:</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Sets 
+	 The Exposure Value for Physical Cameras. By default this is overridden 
+	 by each camera's EV setting, which defaults to 6.0.</span></p></li>
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">When 
+	 you choose Ignore Per-Camera Exposure (Use Global), this setting is 
+	 disabled. To set a global EV other than the default, change this value 
+	 before you choose Ignore Per-Camera Exposure.</span></p></li>
+</ul>
+<h4><b style="mso-bidi-font-weight: normal;"><span style="font-size: 12.0pt; 
+													 line-height: 115%; 
+													 font-family: Arial, sans-serif;">Image 
+ Control group</span></b></h4>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Highlights, 
+ Midtones, and Shadows:</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Use 
+	 these spinners to adjust the color-response curve.</span></p></li>
+</ul>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Color 
+ Saturation:</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Changes 
+	 color saturation in the rendering. Values greater than 1.0 increase 
+	 color saturation. Values less than 1.0 decrease it. </span></p></li>
+</ul>
+<h4><b style="mso-bidi-font-weight: normal;"><span style="font-size: 12.0pt; 
+													 line-height: 115%; 
+													 font-family: Arial, sans-serif;">Physical 
+ Scale group</span></b></h4>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Sets 
+ a physical scale for exposure control to use with lights that are not 
+ physically based. The result is an adjustment of the rendering that approximates 
+ the eye's response to the scene.</span></p>
+<p style="line-height: 115%; font-family: Arial, sans-serif;">Disabled:</p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Disables 
+	 physical scale. If the scene uses non-photometric lights, the light 
+	 that results will likely be dim.</span></p></li>
+</ul>
+<p style="line-height: 115%; font-family: Arial, sans-serif;">Custom (The 
+ default.):</p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Multiplies 
+	 each standard light's Multiplier value by the Physical Scale value 
+	 to give a light intensity value in candelas. For example, with the 
+	 default Physical Scale of 1500, a standard omni light is treated by 
+	 the renderer and radiosity as a photometric isotropic light of 1500 
+	 candelas. Physical Scale is also factored into reflections, refractions, 
+	 and self-illumination.</span></p></li>
+</ul>
+<h3>Pseudo Color Exposure Control</h3>
+<p>Pseudo Color Exposure Control is actually a lighting analysis tool that 
+ provides you with an intuitive way of visualizing and evaluating the lighting 
+ levels in your scenes. It maps luminance or illuminance values to pseudo 
+ colors that show the brightness of the values being converted. From darkest 
+ to brightest, the rendering shows blue, cyan, green, yellow, orange, and 
+ red. (Alternatively, you can choose a grayscale where the brightest values 
+ are white, and the darkest are black.) The rendering includes the colored 
+ or grayscale spectrum bar as a legend for the image.</p>
+<p class="MsoNormal" style="text-align: center;"><img src="Radeon_ProRender_3dsMax_Images/env_control_color.jpg" alt="" style=" border:Solid 1px #c0c0c0; margin-left:20px; margin-right:20px; margin-top:20px; margin-bottom:20px; width:100%; max-width:327px;" border="1" /></p>
+<h4><b style="mso-bidi-font-weight: normal;"><span style="font-size: 12.0pt; 
+													 line-height: 115%; 
+													 font-family: Arial, sans-serif;">Display 
+ Type group</span></b></h4>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Quantity:</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Chooses 
+	 the value being measured.</span></p></li>
+	<ul style="list-style: disc;">
+		<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;"><span 
+		 style="mso-spacerun: yes;">&#160;</span>Illuminance (the default) 
+		 displays values of light incident on surfaces.</span></p></li>
+		<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;"><span 
+		 style="mso-spacerun: yes;">&#160;</span>Luminance displays values 
+		 of light reflected off surfaces.</span></p></li>
+	</ul>
+</ul>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Style:</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Chooses 
+	 the way to display values.</span></p></li>
+	<ul style="list-style: disc;">
+		<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;"><span 
+		 style="mso-spacerun: yes;">&#160;</span>Colored (the default) 
+		 shows a spectrum.</span></p></li>
+		<li><p>Grayscale shows gray tones that range from white to black.</p></li>
+		<li><p>The spectrum bar displays the values the rendering will 
+		 use.</p></li>
+	</ul>
+</ul>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Scale:</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Chooses 
+	 the technique used to map values.</span></p></li>
+	<ul style="list-style: disc;">
+		<li><p>Logarithmic (the default) uses a logarithmic scale.</p></li>
+		<li><p>Linear uses a linear scale.</p></li>
+		<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">The 
+		 Logarithmic scale is useful when the illumination of the surfaces 
+		 of interest is low compared to the maximum illumination in the 
+		 scene.</span></p></li>
+	</ul>
+</ul>
+<h4><b style="mso-bidi-font-weight: normal;"><span style="font-size: 12.0pt; 
+													 line-height: 115%; 
+													 font-family: Arial, sans-serif;">Display 
+ Range group</span></b></h4>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Min. 
+ [Minimum]:</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Sets 
+	 the lowest value to measure and represent in the rendering. Values 
+	 at this quantity or below it all map to the leftmost display color 
+	 (or grayscale level).</span></p></li>
+</ul>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Max. 
+ [Maximum]:</span></p>
+<ul style="list-style: disc;">
+	<li><p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Sets 
+	 the highest value to measure and represent in the rendering. Values 
+	 at this quantity or above it all map to the rightmost display color 
+	 (or grayscale value).</span></p></li>
+</ul>
+<h4><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Physical 
+ Scale display</span></h4>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Sets 
+ a physical scale for exposure control to use with lights that are not 
+ physically based. The result is an adjustment of the rendering that approximates 
+ the eye's response to the scene.</span></p>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Changing 
+ the value of Physical Scale is an optional step. Use it as a last resort 
+ when the materials or maps are not rendering correctly. Changing this 
+ setting will not affect anything in the scene unless your scene has an 
+ Ambient Color different than black. If you do adjust it, set the Physical 
+ Scale value to the equivalent of the brightest light source in the scene.</span></p>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">3ds 
+ Max multiplies each standard light's Multiplier by the Physical Scale 
+ value to produce a light intensity value in candelas. For example, with 
+ the default Physical Scale of 1500, a standard omni light is treated by 
+ the renderer and radiosity as a photometric isotropic light of 1500 candelas. 
+ Physical Scale is also factored into reflections, refractions, and self-illumination.</span></p>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Tip: 
+ When you use ray-tracing with self illumination, set Physical Scale to 
+ the equivalent of the brightest light source in the scene. This sets the 
+ appropriate conversion scale for reflections, self-illumination, and all 
+ other non-physically based elements a material offers. In some cases, 
+ an object might reflect or emit more light than the brightest light object 
+ in the scene; in this case, use the object's Luminance value as the Physical 
+ Scale.</span></p>
+<h4><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">General 
+ Guidelines for Physical Scale Values</span></h4>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">If 
+ you use only Photometric lights, IES Sun, and IES Sky, the Physical Scale 
+ value is disregarded, and you don't need to change it.</span></p>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">If 
+ you use Standard lights, the Physical Scale value acts as a conversion 
+ scale that the radiosity engine uses to calculate energy. Set it to the 
+ equivalent of the brightest light source in the scene. This will set the 
+ appropriate conversion scale for reflections, self-illumination, and all 
+ other non-physically based elements a 3ds Max® material offers.</span></p>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">However, 
+ if you use the Affect Indirect Only flag in the Logarithmic Exposure Control, 
+ you don’t need to worry about the physical scale setting.</span></p>
+<h4><b style="mso-bidi-font-weight: normal;"><span style="font-size: 12.0pt; 
+													 line-height: 115%; 
+													 font-family: Arial, sans-serif;">Spectrum 
+ Bar</span></b></h4>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">Shows 
+ the spectrum-to-intensity mapping. The numbers below the spectrum range 
+ from the Minimum to the Maximum settings.</span></p>
+<p><span style="font-size: 12.0pt; line-height: 115%; font-family: Arial, sans-serif;">When 
+ rendering with pseudo color, the spectrum bar is displayed beneath the 
+ pseudo color image, labeled either Luminance or Illuminance.</span></p>
+<h2>Previewing the Results</h2>
+<p>There are 2 options for previewing the results of changes to the Exposure 
+ Controls. &#160;You can either:</p>
+<ul style="list-style: disc;">
+	<li><p>Press the <span style="font-weight: bold;">Preview Button</span> 
+	 which will display a sample thumbnail of the render in the small preview 
+	 area or</p></li>
+	<li><p>Change the render settings so that the renderer uses the ActiveShade 
+	 window. &#160;Once the ActiveShade render is opened and changes you 
+	 make to the exposure controls will be immediately reflected in the 
+	 render. &#160;This is the recommended approach and is covered in <a 
+	 href="Activeshade_Window.htm">Activeshade Window</a> chapter.</p></li>
+</ul>
+<p>&#160;</p>
+<div style="width: 100%; position: relative;" id="footer">
+	<p style="text-align: center;"><span style="line-height: 115%; mso-ascii-theme-font: minor-latin; 
+										 mso-fareast-font-family: Calibri; 
+										 mso-fareast-theme-font: minor-latin; 
+										 mso-hansi-theme-font: minor-latin; 
+										 mso-bidi-font-family: 'Times New Roman'; 
+										 mso-bidi-theme-font: minor-bidi; 
+										 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; 
+										 mso-bidi-language: AR-SA; font-family: Arial, sans-serif; 
+										 font-size: 10pt;">©</span><span 
+	 style="color: rgb(34, 34, 34); line-height: normal; orphans: auto; 
+	 widows: 1; -webkit-text-stroke-width: 0px; display: inline	 ! important ; 
+	 float: none; background-color: #ffffff; font-family: Arial, sans-serif; 
+	 font-size: 10pt;"> 2016 Advanced Micro Devices, Inc. All rights reserved. 
+	 AMD, the AMD logo, Radeon ProRender, and FirePro are trademarks or 
+	 registered trademarks of Advanced Micro Devices, Inc. Other names 
+	 are used for identification purposes only and may be trademarks of 
+	 the respective owners.</span><span style="font-size: 11.0pt; line-height: 115%; 
+										 font-family: Calibri, sans-serif; 
+										 mso-ascii-theme-font: minor-latin; 
+										 mso-fareast-font-family: Calibri; 
+										 mso-fareast-theme-font: minor-latin; 
+										 mso-hansi-theme-font: minor-latin; 
+										 mso-bidi-font-family: 'Times New Roman'; 
+										 mso-bidi-theme-font: minor-bidi; 
+										 mso-ansi-language: EN-AU; mso-fareast-language: EN-US; 
+										 mso-bidi-language: AR-SA;"> </span>&#160;</p>
+</div>
+</body>
+</html>
